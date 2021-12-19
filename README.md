@@ -12,4 +12,12 @@ It employs more than 44,000 people worldwide and in 2014 the brand alone was val
 ![2021-12-19 (23)](https://user-images.githubusercontent.com/95916859/146681484-c521db69-c2cc-482b-9bcf-aea538f675eb.png)
 ![2021-12-19 (24)](https://user-images.githubusercontent.com/95916859/146681486-59d9275b-01ef-4e87-972c-7ef0c367a51d.png)
 
+# Product Page
+
+![2021-12-19 (25)](https://user-images.githubusercontent.com/95916859/146681624-50479f94-fa21-46c0-ba23-6d5290ed7803.png)
+![2021-12-19 (27)](https://user-images.githubusercontent.com/95916859/146681630-087d0306-e1bb-4512-964b-69216ee18594.png)
+![2021-12-19 (28)](https://user-images.githubusercontent.com/95916859/146681636-d3d3e7ae-92e1-4609-9e9b-9cd5a4206e1c.png)
+![2021-12-19 (29)](https://user-images.githubusercontent.com/95916859/146681640-52d178cc-ee13-4dff-9bfb-80ccfaf807f9.png)
+![2021-12-19 (30)](https://user-images.githubusercontent.com/95916859/146681648-5c91c1cd-322c-4ea3-b28d-c98b9b22298f.png)
+
 
