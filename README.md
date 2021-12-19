@@ -33,20 +33,20 @@ Want to run in your local Machine? Great!
 
 To run, follow these steps:
 
-Clone my repository 
-Open the code in your VS code
-Initialise the server npm run server on terminal
+- Clone my repository https://github.com/sathish-02/Nike_Clone
+- Open the code in your VS code
+- Initialise the server npm run server on terminal
 
 # Layouts
-Grid
-Flex
+- Grid
+- Flex
 # DOM-Events & Attributes
-addEventListener()
-getElementById()
-setAttribute()
+- addEventListener()
+- getElementById()
+- setAttribute()
 onclick()
 # Local storage methods
-localStorage.getItem()
-localStorage.setItem()
+- localStorage.getItem()
+- localStorage.setItem()
 
 
