@@ -26,9 +26,9 @@ It employs more than 44,000 people worldwide and in 2014 the brand alone was val
 ![1_fNUM5mUYzTzKXTBkok87WQ](https://user-images.githubusercontent.com/95916859/146681697-15c8d9b8-aa47-4f9f-b0c8-12f7af3e2e2e.png)
 ![1_WaofSOd0TLkrHQspHw79aA](https://user-images.githubusercontent.com/95916859/146681703-a6cca6d4-5685-43b3-9c16-d2be0b9ac2b6.png)
 
-#Getting Started
+# Getting Started
 
-Execution..
+# Execution..
 Want to run in your local Machine? Great!
 
 To run, follow these steps:
@@ -37,15 +37,15 @@ Clone my repository
 Open the code in your VS code
 Initialise the server npm run server on terminal
 
-Layouts
+# Layouts
 Grid
 Flex
-DOM-Events & Attributes
+# DOM-Events & Attributes
 addEventListener()
 getElementById()
 setAttribute()
 onclick()
-Local storage methods
+# Local storage methods
 localStorage.getItem()
 localStorage.setItem()
 
