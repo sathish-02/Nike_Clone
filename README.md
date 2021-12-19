@@ -20,4 +20,33 @@ It employs more than 44,000 people worldwide and in 2014 the brand alone was val
 ![2021-12-19 (29)](https://user-images.githubusercontent.com/95916859/146681640-52d178cc-ee13-4dff-9bfb-80ccfaf807f9.png)
 ![2021-12-19 (30)](https://user-images.githubusercontent.com/95916859/146681648-5c91c1cd-322c-4ea3-b28d-c98b9b22298f.png)
 
+# Payment Page
+
+![1_9oRdE_1shFH98DP2tFMZbQ](https://user-images.githubusercontent.com/95916859/146681692-ad50c948-ac9a-41b1-8d84-7f390494bbb8.png)
+![1_fNUM5mUYzTzKXTBkok87WQ](https://user-images.githubusercontent.com/95916859/146681697-15c8d9b8-aa47-4f9f-b0c8-12f7af3e2e2e.png)
+![1_WaofSOd0TLkrHQspHw79aA](https://user-images.githubusercontent.com/95916859/146681703-a6cca6d4-5685-43b3-9c16-d2be0b9ac2b6.png)
+
+#Getting Started
+
+Execution..
+Want to run in your local Machine? Great!
+
+To run, follow these steps:
+
+Clone my repository 
+Open the code in your VS code
+Initialise the server npm run server on terminal
+
+Layouts
+Grid
+Flex
+DOM-Events & Attributes
+addEventListener()
+getElementById()
+setAttribute()
+onclick()
+Local storage methods
+localStorage.getItem()
+localStorage.setItem()
+
 
