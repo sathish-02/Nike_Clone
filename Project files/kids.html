@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kid's Clothings</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f7879b5792.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        /* header css part */
+        #one {
+            grid-area: a;
+            height: 30px;
+            background-color: ghostwhite;
+            border: 0;
+            display: flex;
+            margin-left: -10px;
+            margin-right: -10px;
+            margin-top: -8px;
+            padding-top: 5px;
+        }
+
+        #logo {
+            width: 30px;
+            height: 30px;
+            padding-left: 45px;
+        }
+
+        #bar {
+            width: 13%;
+            height: 90%;
+            margin-left: 80%;
+            display: flex;
+            border: 0px;
+        }
+
+        #help {
+            padding-left: 5px;
+            padding-right: 5px;
+            width: 50px;
+
+        }
+
+        #join {
+            padding-left: 7px;
+            padding-right: 7px;
+        }
+
+        #join,
+        #help {
+            border-right: 1px solid black;
+        }
+
+        #sign {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        #join,
+        #help,
+        #sign {
+            background-color: transparent;
+            border: 0px;
+        }
+
+        #two {
+            grid-area: b;
+            border-radius: 10px;
+            height: 55px;
+            display: grid;
+            grid-template-columns: 30% 40% 20% 10%;
+            background-color: white;
+        }
+
+        .div1 {
+            height: 60px;
+
+        }
+
+        .div1>img {
+            margin-top: 4%;
+            margin-left: 7%;
+            height: 35%;
+            width: 15%;
+        }
+
+        .div2 {
+            display: flex;
+            margin-right: 0px;
+            margin-left: 10%;
+        }
+
+        .div2>div {
+
+            height: 20px;
+            margin-right: 20px;
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 18px;
+        }
+
+        .div2>div:hover {
+            color: #777777;
+        }
+
+        .div3 {
+            height: 60px;
+            display: flex;
+
+        }
+
+        .div3>input {
+            margin-left: 20%;
+            margin-top: 2.5%;
+            height: 50%;
+        }
+
+        .sizeOfSearch {
+            font-size: 18px;
+            position: absolute;
+            margin-top: 16px;
+            margin-left: 60px;
+        }
+
+        .searchPdts {
+            width: 150px;
+            height: 37px;
+            margin-top: 10px;
+            margin-left: 50px;
+            border-radius: 20px;
+            border: 0px;
+            background-color: #F5F5F5;
+            padding-left: 40px;
+        }
+
+        .searchPdts:hover {
+            background-color: #d1d1d1;
+        }
+
+        .div4>div>span {
+
+            height: 62%;
+            font-size: 30px;
+            padding-left: 18px;
+
+        }
+
+        .spanClass {
+            margin-left: 5%;
+            margin-top: 7px;
+        }
+
+        .bag {
+            border-radius: 90px;
+        }
+
+
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+
+        /* product css part */
+        #productHead {
+            width: 350px;
+            margin-left: 2%;
+            height: 60px;
+            border: 1px solid transparent;
+            border-bottom: 1px solid rgb(170, 167, 167);
+            text-align: left;
+            margin: left;
+        }
+
+        #productHead>h1 {
+            margin: 8px;
+        }
+
+        #buttonDivs {
+            width: 95%;
+            height: 60px;
+            border: 1px solid transparent;
+            border-bottom: 1px solid rgb(170, 167, 167);
+            text-align: left;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        .byprice,
+        .bycategory,
+        .bykid,
+        .bycolor {
+            padding: 10px 15px;
+            margin-right: 2%;
+            font-size: 18px;
+            border-radius: 10px;
+            background-color: none;
+            margin-top: 5px;
+        }
+
+        .clearBtn {
+            padding: 10px 15px;
+            font-size: 18px;
+            border-radius: 10px;
+            background-color: transparent;
+            margin-top: 5px;
+            border: 1px solid gray;
+        }
+
+        .clearBtn:hover {
+            background-color: rgb(221, 216, 216);
+        }
+
+        .selectBtn:hover {
+            background-color: rgb(221, 216, 216);
+        }
+
+        .kidshomepage {
+            width: 93%;
+            border: 1px solid transparent;
+            margin: auto;
+            margin-top: 10px;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 10px;
+        }
+
+        #products>div {
+            border: 1px solid transparent;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        img {
+            width: 100%;
+            height: 350px;
+        }
+
+        h3 {
+            padding-left: 2%;
+            margin-top: 0%;
+            margin-bottom: 1%;
+            font-size: 18px;
+        }
+
+        p {
+            padding-left: 2%;
+            margin-top: 0%;
+            margin-bottom: 1%;
+        }
+
+        p:hover {
+            color: red;
+        }
+
+        #bag {
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 15px;
+            background-color: transparent;
+            border: 1px solid rgb(173, 170, 170);
+        }
+
+        #bag:hover {
+            color: white;
+            cursor: pointer;
+            background-color: blue;
+        }
+
+        .bagbtn {
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 15px;
+            background-color: transparent;
+            border: 1px solid rgb(173, 170, 170);
+        }
+
+        .bagbtn:hover {
+            color: white;
+            cursor: pointer;
+            background-color: blue;
+        }
+
+        /* footer css part */
+        #eigthteen {
+            width: 100%;
+            background-color: black;
+        }
+
+        .footerContainer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footerDiv1 {
+            width: 60%;
+            display: flex;
+            font-family: Helvetica;
+            justify-content: space-between;
+            font-size: 13px;
+        }
+
+        .footerDiv1 a:hover {
+            color: white;
+        }
+
+        .unorderlist>li {
+            list-style: none;
+        }
+
+        .unorderlist {
+            line-height: 2.3;
+        }
+
+        .anchorhead {
+            color: white;
+            text-decoration: none;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 2.3;
+        }
+
+        .anchortextcolor {
+            text-decoration: none;
+            color: gray;
+        }
+
+        .iconContainer {
+            display: flex;
+            margin-right: 4%;
+            justify-content: space-between;
+            margin-top: 3%;
+        }
+
+        .iconContainer>div {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            font-size: 20px;
+            background-color: grey;
+        }
+
+        .icondiv {
+            margin-right: 10px;
+        }
+
+        .icon {
+            color: black;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 17%;
+        }
+
+        #horizontalline {
+            height: 0.1mm;
+            border: 0px;
+            background-color: rgba(128, 128, 128, 0.288);
+        }
+
+        .bottomfooter {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 3%;
+            font-family: Helvetica;
+        }
+
+        .location {
+
+            height: 50px;
+            width: 63%;
+        }
+
+        #mapicon {
+            color: white;
+        }
+
+        .anchorhead {
+            color: white;
+            text-decoration: none;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 2.3;
+        }
+
+        #footerlabel {
+            color: grey;
+            font-size: 11px;
+            margin-left: 15px;
+        }
+
+        .policies {
+            margin-right: 3%;
+            font-size: 13px;
+            width: 37%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1%;
+        }
+
+        .policies a {
+            font-size: 11px;
+        }
+
+        .policies a:hover {
+            color: white;
+        }
+
+        /* products css ends here */
+        @media only screen and (min-width: 421px) and (max-width: 768px) {
+            .kidshomepage {
+                width: 93%;
+                border: 1px solid transparent;
+                margin: auto;
+                margin-top: 10px;
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: repeat(2, 1fr);
+                padding: 10px;
+            }
+
+            #buttonDivs {
+                width: 95%;
+                height: 110px;
+                border: 1px solid transparent;
+                border-bottom: 1px solid rgb(170, 167, 167);
+                text-align: left;
+                margin: auto;
+                margin-top: 15px;
+            }
+        }
+
+
+
+        @media only screen and (min-width: 0px) and (max-width: 420px) {
+            .kidshomepage {
+                width: 93%;
+                border: 1px solid transparent;
+                margin: auto;
+                margin-top: 10px;
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: repeat(1, 1fr);
+                padding: 10px;
+            }
+
+            #buttonDivs {
+                width: 95%;
+                height: 170px;
+                border: 1px solid transparent;
+                border-bottom: 1px solid rgb(170, 167, 167);
+                text-align: left;
+                margin: auto;
+                margin-top: 15px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="one">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Jumpman_logo.svg/1200px-Jumpman_logo.svg.png"
+            alt="" id="logo">
+        <div id="bar">
+            <button id="help" class="help">Help</button>
+            <button id="join">Join us</button>
+            <button id="sign"><a onclick="modalClick()">Sign In</a></button>
+        </div>
+    </div>
+    <div id="two">
+        <div class="div1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1200px-Logo_NIKE.svg.png"
+                alt="logo" height="35%">
+        </div>
+        <div class="div2">
+            <div><a href="mens.html">Men</a></div>
+            <div><a href="womens.html">Women</a></div>
+            <div><a href="kids.html">Kids</a></div>
+            <div><a href="snkrs.html">SNKRS</a></div>
+        </div>
+        <div class="div3">
+            <span><i class="fas fa-search sizeOfSearch"></i><input type="text" class="searchPdts"
+                    placeholder="Search" /></span>
+        </div>
+        <div class="div4">
+            <div class="spanClass">
+                <span><i class="far fa-heart"></i></span>
+                <!-- <span class="bag"><i class="fas fa-shopping-bag"></i></span> -->
+                <span class="bag"><a href="bagitems.html"><i id="bagicon" class="fas fa-shopping-bag"></i></a></span>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- //products section starts from here -->
+
+    <div id="productHead">
+        <h1 id="bagcount">
+        </h1>
+    </div>
+
+
+    <div id="buttonDivs">
+        <select class="byprice" onchange="bypricefun()">
+            <option value="">Price</option>
+            <option value="lowtohigh">low to high</option>
+            <option value="hightolow">high to low</option>
+        </select>
+        <select class="bycategory" onchange="categoryfun()">
+            <option value="">Categories</option>
+            <option value="Jacket">Jacket</option>
+            <option value="Shoe">Shoe</option>
+            <option value="Leggings">Leggings</option>
+            <option value="Top">Top</option>
+            <option value="Pants">Pants</option>
+            <option value="T-Shirt">T-shirt</option>
+            <option value="Shorts">Shorts</option>
+        </select>
+        <select class="bykid" onchange="bykidfun()">
+            <option value="">Kid</option>
+            <option value="Boys">Boys</option>
+            <option value="Girls">Girl</option>
+        </select>
+
+
+        <select class="bycolor" onchange="bycolorfun()">
+            <option value="">Color</option>
+            <option class="Black">Black</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Gray">Gray</option>
+            <option value="White">White</option>
+            <option value="Pink">Pink</option>
+        </select>
+        <button onclick="clearAll()" class="clearBtn">Clear</button>
+
+    </div>
+    <div class="kidshomepage">
+    </div>
+
+
+    <div id="eigthteen">
+        <div class="footermaindiv">
+            <div class="footerContainer">
+                <div class="footerDiv1">
+                    <ul class="unorderlist">
+                        <li><a class="anchorhead" href="#">FIND STORE</a></li>
+                        <li><a class="anchorhead" href="#">BECOME A MEMBER</a></li>
+                        <li><a class="anchorhead" href="#">SIGN UP FOR EMAL</a></li>
+                        <li><a class="anchorhead" href="#">STUDENT DISCOUNT</a></li>
+                        <li><a class="anchorhead" href="#">SEND US FEEDBACK</a></li>
+                    </ul>
+                    <ul class="unorderlist">
+                        <li><a class="anchorhead" href="#">GET HELP</a></li>
+                        <li><a class="anchortextcolor" href="help.html">Order Status</a></li>
+                        <li><a class="anchortextcolor" href="help.html">Delivery</a></li>
+                        <li><a class="anchortextcolor" href="help.html">Returns</a></li>
+                        <li><a class="anchortextcolor" href="#">Payment option</a></li>
+                        <li><a class="anchortextcolor" href="#">Contact Us On Nike.com Inquiries</a></li>
+                        <li><a class="anchortextcolor" href="#">Contact Us On Other Inquiries</a></li>
+                    </ul>
+                    <ul class="unorderlist">
+                        <li><a class="anchorhead" href="#">ABOUT NIKE</a></li>
+                        <li><a class="anchortextcolor" href="https://news.nike.com/">News</a></li>
+                        <li><a class="anchortextcolor" href="#">Careers</a></li>
+                        <li><a class="anchortextcolor" href="https://investors.nike.com/Home/default.aspx">Investors</a>
+                        </li>
+                        <li><a class="anchortextcolor" href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="iconContainer">
+                    <div class="icondiv"><a class="icon"
+                            href="https://twitter.com/Nike?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i
+                                class="fab fa-twitter"></i></a></div>
+                    <div class="icondiv"><a class="icon" href="https://www.facebook.com/nike/"><i
+                                class="fab fa-facebook-f"></i></a></div>
+                    <div class="icondiv"><a class="icon" href="https://www.youtube.com/user/NIKE"><i
+                                class="fab fa-youtube"></i></a></div>
+                    <div><a class="icon" href="https://www.instagram.com/nike/?hl=en"><i
+                                class="fab fa-instagram"></i></a></div>
+                </div>
+            </div>
+            <hr id="horizontalline">
+            <div class="bottomfooter">
+                <div class="location">
+                    <a href="#"><i id="mapicon" class="fas fa-map-marker-alt"></i></a>
+                    <a class="anchorhead" href="#">India</a>
+                    <label id="footerlabel">© 2021 Nike, Inc. All Rights Reserved</label>
+                </div>
+                <div class="policies">
+                    <a class="anchortextcolor" href="#">Guides</a>
+                    <a class="anchortextcolor" href="#">Terms of Sale</a>
+                    <a class="anchortextcolor" href="#">Terms of Use</a>
+                    <a class="anchortextcolor" href="#">Nike Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
+<script src="https://kit.fontawesome.com/3347d6e76d.js" crossorigin="anonymous"></script>
+<script>
+
+    var kidsdata = [
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9ba28c62-18e2-4562-a610-b91f38b9cc6f/air-older-crop-jacket-8H9nnC.png",
+            gender: "Girls",
+            name: "Nike Air",
+            category: "Jacket",
+            color: "Black",
+            Price: "3117",
+            size: ["S", "M", "L", "XL"]
+
+        },
+
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/1aa3abc4-692e-466b-b985-570a178f25ef/air-force-1-older-shoes-w6PsF3.png",
+            gender: "Boys",
+            name: "Nike Air Force 1",
+            category: "Shoe",
+            color: "White",
+            Price: "5995",
+            size: ["S", "M", "L", "XL"]
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0661fc02-dacd-45b1-9a3f-5e9fdcd35f30/air-older-leggings-lxNfH1.png",
+            gender: "Girls",
+            name: "Nike Air",
+            category: "Leggings",
+            color: "Black",
+            Price: "1895",
+            size: ["S", "M", "L", "XL"]
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/209aa5f6-e1cf-442a-9935-f640af11e77a/trophy-older-sports-bra-Hwg6v0.png",
+            gender: "Girls",
+            name: "Nike Top",
+            category: "Top",
+            color: "Blue",
+            Price: "877",
+            size: ["S", "M", "L", "XL"]
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/948667b3-27c1-4433-9e42-269862601e80/dri-fit-indy-older-sports-bra-BXTNd7.png",
+            gender: "Girls",
+            name: "Nike Dri-FIT Indy",
+            category: "Top",
+            color: "Orange",
+            Price: "1295",
+            size: ["S", "M", "L", "XL"]
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/93d2b3aa-3024-4cda-9c70-a36acb2382c3/air-force-1-lv8-older-shoes-KKcPKZ.png",
+            gender: "Girls",
+            name: "Nike Air Force 1 LV8",
+            category: "Shoe",
+            color: "White",
+            Price: "6495",
+            size: ["S", "M", "L", "XL"]
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9bbbbc09-cfb4-4de2-b0b1-3d1d3ff5aefc/crossover-older-basketball-jacket-kc3hmV.png",
+            gender: "Boys",
+            name: "Nike Crossover",
+            category: "Jacket",
+            color: "Blue",
+            Price: "3695",
+            size: ["S", "M", "L", "XL"]
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a6f23b13-d617-4111-83bf-3917529b060c/dri-fit-kylian-mbappe-older-football-pants-1jRmhH.png",
+            gender: "Boys",
+            name: "Nike Dri-FIT Kylian Mbappé",
+            category: "Pants",
+            color: "Black",
+            Price: "2795",
+            size: ["S", "M", "L", "XL"]
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/73af1a96-b3a7-443f-9ed7-ea82fcfeedcd/jr-mercurial-superfly-8-academy-km-mg-younger-older-multi-ground-football-boot-n67H03.png",
+            gender: "Boys",
+            name: "Nike Jr. Mercurial Superfly 8 Academy KM MG",
+            category: "Shoe",
+            color: "Blue",
+            Price: "6995",
+            size: ["S", "M", "L", "XL"]
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/41a302c8-e177-4963-8e69-72ec150e6372/kyrie-infinity-se-older-basketball-shoes-q3V9WM.png",
+            gender: "Boys",
+            name: "Kyrie Infinity SE",
+            category: "Shoe",
+            color: "White",
+            Price: "7995",
+            size: ["S", "M", "L", "XL"]
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3cbf7850-8b59-41c5-8e3f-0a8c121b6f07/air-max-2021-older-shoes-dRthcp.png",
+            gender: "Boys",
+            name: "Nike Air Max 2021",
+            category: "Shoe",
+            color: "Black",
+            Price: "9995",
+            size: ["S", "M", "L", "XL"]
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/68723e6a-f437-4c6d-94ab-479cb6dd91ac/sportswear-older-tracksuit-1G4VD8.png",
+            gender: "Boys",
+            name: "Nike Sportswear",
+            category: "Shoe",
+            color: "Red",
+            Price: "2995",
+            size: ["S", "M", "L", "XL"]
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/67201e2f-3900-48f5-954f-73507a215b33/dri-fit-academy-older-knit-football-tracksuit-VXgxs4.png",
+            gender: "Boys",
+            name: "Nike Dri-FIT Academy",
+            category: "Jacket",
+            color: "Black",
+            Price: "2954",
+            size: ["S", "M", "L", "XL"]
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b1435e15-5742-4c92-83a7-ef88767f43a2/sportswear-older-t-shirt-v1lNRd.png",
+            gender: "Boys",
+            name: "Nike Sportswear",
+            category: "T-Shirt",
+            color: "White",
+            Price: "1195",
+            size: ["S", "M", "L", "XL"]
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0d582f5e-594c-481b-b933-2d339e28f176/older-short-sleeve-training-top-cCBkVT.png",
+            gender: "Boys",
+            name: "Short-Sleeve Training Top",
+            category: "T-Shirt",
+            color: "Black",
+            Price: "1395",
+            size: ["S", "M", "L", "XL"]
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8b719283-54e1-4181-afee-4d3ff78d50bc/dri-fit-older-basketball-shorts-W2N8zs.png",
+            gender: "Boys",
+            name: "Nike Dri-FIT",
+            category: "Shorts",
+            color: "Red",
+            Price: "1192",
+            size: ["S", "M", "L", "XL"]
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/23913cc8-b01d-4a85-92a0-32a7b68311d8/jr-phantom-gt2-academy-tf-younger-older-football-shoe-8959hr.png",
+            gender: "Boys",
+            name: "Nike Jr. Phantom GT2 Academy TF",
+            category: "Shoe",
+            color: "Blue",
+            Price: "5495",
+            size: ["S", "M", "L", "XL"]
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/7d0059f8-a2f0-4afd-bee4-38c6fa266fde/dri-fit-trophy-older-graphic-training-top-klrNC8.png",
+            gender: "Boys",
+            name: "Nike Dri-FIT Trophy",
+            category: "T-Shirt",
+            color: "Black",
+            Price: "1111",
+            size: ["S", "M", "L", "XL"]
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d781a2ef-2ece-47bc-b2e2-e6815a7b0287/brasilia-jdi-backpack-MKLkXg.png",
+            gender: "Girls",
+            name: "Nike Brasilia JDI",
+            category: "Bag",
+            color: "Black",
+            Price: "1117",
+
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/12b63b8b-d34a-4245-a3e2-9de0e785c81b/sportswear-older-t-shirt-cGzmBz.png",
+            gender: "Girls",
+            name: "Nike Sportswear",
+            category: "T-Shirt",
+            color: "Blue",
+            Price: "1195",
+            size: ["S", "M", "L", "XL"]
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/22afa9cf-1d5f-405d-9857-98d2ac3f2195/classic-backpack-V8xJFl.png",
+            gender: "Boys",
+            name: "Nike Classic",
+            category: "Bag",
+            color: "Gray",
+            Price: "1597",
+
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/uflbfhiupfs5hyuem0xx/heritage86-adjustable-hat-qZrx4v.png",
+            gender: "Boys",
+            name: "Nike Heritage86",
+            category: "Cap",
+            color: "Black",
+            Price: "795",
+
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d4f92a1a-c554-4b38-a8e9-fead2ece7ec9/backpack-NJ1f9l.png",
+            gender: "Boys",
+            name: "Nike",
+            category: "Bag",
+            color: "Black",
+            Price: "1995",
+
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f1873eef-b2a2-4362-94c9-bb9adf4986b7/sportswear-older-t-shirt-CTtrc0.png",
+            gender: "Girls",
+            name: "Nike Sportswear",
+            category: "T-Shirt",
+            color: "Cream",
+            Price: "1395",
+            size: ["S", "M", "L", "XL"]
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/cd678bb6-6a83-4270-b150-38e138998dfd/sportswear-favourites-older-swoosh-leggings-R5Dp6H.png",
+            gender: "Girls",
+            name: "Nike Sportswear Favourites",
+            category: "Leggings",
+            color: "Red",
+            Price: "1295",
+            size: ["S", "M", "L", "XL"]
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6e04a75a-7c53-4f1c-abfd-46400627c648/sportswear-older-french-terry-pullover-hoodie-J1DPxS.png",
+            gender: "Girls",
+            name: "Nike Sportswear",
+            category: "Hoodie",
+            color: "Pink",
+            Price: "3295",
+            size: ["S", "M", "L", "XL"]
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/vivpytgbtjpiigw7srck/sportswear-club-older-hoodie-NPFmDM.png",
+            gender: "Boys",
+            name: "Nike Sportswear Club",
+            category: "Hoodie",
+            color: "Gray",
+            Price: "2295",
+            size: ["S", "M", "L", "XL"]
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d7f38772-b885-4b61-963e-9f3424ca9c7f/dunk-high-older-shoe-5g3xvG.png",
+            gender: "Boys",
+            name: "Nike Dunk High",
+            category: "Shoe",
+            color: "Black",
+            Price: "2285",
+            size: ["S", "M", "L", "XL"]
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/gk9wlholkiw3u7v61lnk/dri-fit-older-short-sleeve-training-top-nMmPXp.png",
+            gender: "Boys",
+            name: "Nike Dri-FIT",
+            category: "T-Shirt",
+            color: "Black",
+            Price: "895",
+            size: ["S", "M", "L", "XL"]
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8d2c081b-ac13-44d4-9ca3-1a70ee605634/force-1-le-younger-shoe-rg3gD7.png",
+            gender: "Boys",
+            name: "Nike Force 1 LE",
+            category: "Shoe",
+            color: "Black",
+            Price: "4499",
+            size: ["S", "M", "L", "XL"]
+
+        }, {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4c5b8623-7df9-4258-96b3-9340a51721fb/older-short-sleeve-football-top-qKnsBF.png",
+            gender: "Boys",
+            name: "Nike",
+            category: "T-Shirt",
+            color: "Blue",
+            Price: "1195",
+            size: ["S", "M", "L", "XL"]
+
+        }, {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d7acc9d9-f5a1-4696-84fa-685ee69dd37f/air-more-uptempo-older-shoes-44M0ct.png",
+            gender: "Boys",
+            name: "Nike Air More Uptempo",
+            category: "Shoe",
+            color: "Red",
+            Price: "9995",
+            size: ["S", "M", "L", "XL"]
+
+        },
+    ]
+    localStorage.setItem("kidsdata", JSON.stringify(kidsdata))
+    document.querySelector("#bagcount").textContent = "Kids Products" + " " + "(" + kidsdata.length + ")";
+    var bagProducts = JSON.parse(localStorage.getItem("bagProducts")) || [];
+
+    function clearAll() {
+        location.reload();
+    }
+
+
+
+    kidsdata.map(function (elem, index) {
+        var smalldiv = document.createElement('div')
+        var image = document.createElement('img')
+        image.setAttribute('class', 'imagesize')
+        var gender = document.createElement('p')
+        gender.setAttribute('class', 'firstpara')
+        var productname = document.createElement('h3')
+        productname.setAttribute('class', 'secondpara')
+        var description = document.createElement('p')
+        description.setAttribute('class', 'thirdpara')
+        var category = document.createElement('p')
+        category.setAttribute('class', 'fourthpara')
+        var price = document.createElement('h3')
+        price.setAttribute('class', 'fifthpara')
+
+        var flexdiv = document.createElement('div')
+        flexdiv.setAttribute('class', 'flexdiv1')
+        var largediv = document.createElement('div')
+        image.setAttribute('src', elem.imgUrl)
+        largediv.addEventListener("click", showprod);
+        gender.textContent = elem.gender;
+        productname.textContent = elem.name;
+        category.textContent = elem.category;
+        description.textContent = elem.color;
+        price.textContent = elem.Price;
+        if (elem.color == 'White') {
+            price.style.color = "Wheat"
+            description.style.color = "Wheat"
+        }
+        else {
+            price.style.color = elem.color
+            description.style.color = elem.color
+        }
+        smalldiv.append(productname, description, price)
+        flexdiv.append(smalldiv)
+        largediv.append(image, flexdiv)
+        document.querySelector('.kidshomepage').append(largediv)
+        function showprod(event) {
+            console.log("here");
+            productDetails(elem)
+        }
+    })
+
+    function categoryfun() {
+        var categoryselected = document.querySelector('.bycategory').value;
+        var kids = kidsdata.filter(function (elem) {
+            return elem.category == categoryselected;
+        });
+        displaycategory(kids)
+    }
+
+    function bykidfun() {
+        var kidselected = document.querySelector('.bykid').value;
+        var kids = kidsdata.filter(function (elem) {
+            return elem.gender == kidselected;
+        });
+        displaycategory(kids)
+    }
+    function bypricefun() {
+        var priceselected = document.querySelector('.byprice').value;
+        if (priceselected == "lowtohigh") {
+            var kids = kidsdata.sort(function (a, b) {
+                return a.price - b.price
+            })
+        }
+        else if (priceselected == "hightolow") {
+            var kids = kidsdata.sort(function (a, b) {
+                return b.price - a.price
+            })
+        }
+        displaycategory(kids)
+    }
+    function bycolorfun() {
+
+        var kidselected = document.querySelector('.bycolor').value;
+        var kids = kidsdata.filter(function (elem) {
+            return elem.color == kidselected;
+        });
+        displaycategory(kids)
+
+
+
+
+    }
+
+    function productDetails(elem) {
+
+        //var productPage = JSON.parse(localStorage.getItem("Men's Products"));
+
+        var productPage = [];
+
+        productPage.push(elem);
+        console.log(productPage)
+        localStorage.setItem("productDetails", JSON.stringify(productPage));
+
+        window.location.href = "kidsdescription.html";
+    }
+
+
+    function displaycategory(kids) {
+        document.querySelector('.kidshomepage').textContent = "";
+        for (i = 0; i < kids.length; i++) {
+            var smalldiv = document.createElement('div')
+            var image = document.createElement('img')
+            image.setAttribute('class', 'imagesize')
+            var gender = document.createElement('p')
+            gender.setAttribute('class', 'firstpara')
+            var productname = document.createElement('h3')
+            productname.setAttribute('class', 'secondpara')
+            var description = document.createElement('p')
+            description.setAttribute('class', 'thirdpara')
+            var category = document.createElement('p')
+            category.setAttribute('class', 'fourthpara')
+            var price = document.createElement('h3')
+            price.setAttribute('class', 'fifthpara')
+            image.setAttribute('src', kids[i].imgUrl)
+            gender.textContent = kids[i].gender;
+            productname.textContent = kids[i].name;
+            category.textContent = kids[i].category;
+            description.textContent = kids[i].color;
+            price.textContent = kids[i].price;
+
+            if (kids[i].color == 'White') {
+                price.style.color = "Wheat"
+                description.style.color = "Wheat"
+            }
+            else {
+                price.style.color = kids[i].color
+                description.style.color = kids[i].color
+            }
+
+
+            smalldiv.append(image, productname, description, price)
+            document.querySelector('.kidshomepage').append(smalldiv)
+        }
+
+    }
+
+
+
+
+
+</script>

@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f7879b5792.js" crossorigin="anonymous"></script>
+    <title>Nike. Just Do It. Nike IN</title>
+    <style>
+        * {
+            font-family: 'Open Sans', sans-serif;
+        }
+        /*main container*/
+        #container {
+
+            display: grid;
+            grid-template-columns: repeat(18, 1fr);
+            grid-gap: 5px;
+            border: 1px solid transparent;
+            grid-template-areas:
+                "a a a a a a a a a a a a a a a a a a"
+                "b b b b b b b b b b b b b b b b b b"
+                "c c c c c c c c c c c c c c c c c c"
+                "d d d d d d d d d d d d d d d d d d"
+                "e e e e e e e e e e e e e e e e e e"
+                "f f f f f f f f f f f f f f f f f f"
+                "g g g g g g g g g g g g g g g g g g"
+                "h h h h h h h h h h h h h h h h h h"
+                "i i i i i i i i i i i i i i i i i i"
+                "j j j j j j j j j j j j j j j j j j"
+                "k k k k k k k k k k k k k k k k k k"
+                "l l l l l l l l l l l l l l l l l l"
+                "m m m m m m m m m m m m m m m m m m"
+                "n n n n n n n n n n n n n n n n n n"
+                "o o o o o o o o o o o o o o o o o o"
+                "p p p p p p p p p p p p p p p p p p"
+                "q q q q q q q q q q q q q q q q q q"
+                "r r r r r r r r r r r r r r r r r r"
+                "s s s s s s s s s s s s s s s s s s"
+                "t t t t t t t t t t t t t t t t t t"
+                "u u u u u u u u u u u u u u u u u u"
+
+            ;
+
+        }
+        
+        #one{
+            grid-area: a;
+            height: 30px;
+            background-color: ghostwhite;
+            border: 0;
+            display: flex;
+            margin-left: -10px;
+            margin-right: -10px;
+            margin-top: -8px;
+            padding-top: 5px;
+        }
+        #bar{
+            width: 13%;
+            height: 90%;
+            margin-left: 80%;
+            display: flex;
+            border: 0px;
+        }
+        #join{
+            padding-left: 7px;
+            padding-right: 7px;
+        }
+        #help{
+            padding-left: 5px;
+            padding-right: 5px;
+            width: 50px;
+            
+        }
+        #sign{
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        #join,#help,#sign{
+            background-color: transparent;
+            border: 0px;
+        }
+        #join,#help{
+            border-right: 1px solid black;
+        }
+        #logo{
+            width: 30px;
+            height: 30px;
+            padding-left: 45px;
+        }
+        /*second navbar*/
+        #two{
+            grid-area: b;
+            border-radius: 10px;
+            height: 55px;
+            display: grid;
+            grid-template-columns: 30% 40% 20% 10%;
+            background-color: white;
+        }
+        .div1{
+              height: 60px;
+              
+          }
+          .div2{
+              display: flex;
+              margin-right: 0px;
+              margin-left: 10%;
+          }
+          .div3{
+              height: 60px;
+              display: flex;
+              
+          }
+          .div1> img{
+              margin-top: 4%;
+              margin-left: 7%;
+          }
+          .div2 > div{
+              
+              height: 20px;
+              margin-right: 20px;
+              font-family:sans-serif;
+              text-align: center;
+              margin-top: 18px;
+            }
+            .div2 > div:hover{
+                color: #777777;
+            }
+            .div3 > input{
+                margin-left: 20%;
+                margin-top: 2.5%;
+                height: 50%;
+            }
+            .div4 > div > span{
+                
+                height: 62%;
+                font-size: 30px;
+                padding-left: 18px;
+
+            }
+            .bag{
+                border-radius: 90px;
+            }
+            .sizeOfSearch{
+                font-size: 18px;
+                position: absolute;
+                margin-top: 16px;
+                margin-left: 60px;
+            }
+            .searchPdts{
+                width: 150px;
+                height: 37px;
+                margin-top: 8px;
+                margin-left: 50px;
+                border-radius: 20px;
+                border: 0px;
+                background-color: #F5F5F5;
+                padding-left: 35px;
+            }
+            .searchPdts:hover{
+                background-color: #d1d1d1;
+            }
+            .spanClass{
+                margin-left: 5%;
+                margin-top: 7px;
+            }
+            /*body css*/
+        #three {
+            grid-area: c;
+            height: 60px;
+            text-align: center;
+            font-size: 16px;
+            margin-left: -10px;
+            margin-right: -10px;
+            background-color: #F5F5F5;
+        }
+
+        .helloNikeTab{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .helloNikeTabText{
+            margin-top: 0px;
+            font-size: 12px;
+        }
+
+        #four{
+            grid-area: d;
+            height: 700px;
+            position: relative;
+            background-color: #B1AE98  ;
+            background-size:100% 100%;
+            font-family: 'Open Sans', sans-serif;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .raceDay{
+            width: 35%;
+            height: 40%;
+            margin-top: 420px;
+            padding-left: 30px;
+        }
+        .raceDayEveryday{
+            font-size: 68px;
+            line-height: 60px;
+            margin-top: 0px;
+            font-weight: bolder;
+            word-wrap: break-word;
+        }
+        .shopBtnBlack{
+            width: 95px;
+            height: 42px;
+            border-radius: 30px;
+            background-color: black;
+            color: white;
+            border: 0px;
+        }
+        .shopBtnBlack:hover{
+            background-color: #32322D;
+        }
+        .posRaceDayBtn{
+            margin-top: -20px;
+        }
+        .nikeFly{
+            padding-left: 5px;
+        }
+
+        #five{
+            grid-area: e;
+            height: 120px;
+            margin-left: 50px;
+            font-family: 'Open Sans', sans-serif;
+            margin-right: 50px;
+        }
+
+        .divHeading{
+            font-weight: 500;
+        }
+        .latestHeading{
+            margin-top: 70px;
+        }
+
+        #six{
+            grid-area: f;
+            height: 700px;
+            margin-left: 50px;
+            font-family: 'Open Sans', sans-serif;
+            margin-right: 50px;
+        }
+       
+        #seven{
+            grid-area: g;
+            height: 350px;
+            margin-left: 50px;
+            margin-right: 50px;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .throwBack,.styleStep{
+            width: 60%;
+            font-size: 58px;
+            line-height: 60px;
+            margin-top: -30px;
+            font-weight:bolder;
+            word-wrap: break-word;
+            margin: auto;
+        }
+
+        .familiarLines,.styleStepLines{
+            width: 65%;
+            margin: auto;
+            margin-top: 35px;
+        }
+
+        #eigth{
+            grid-area: h;
+            height: 120px;
+            margin-left: 50px;
+            margin-right: 50px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        #nine{
+            grid-area: i;
+            height: 800px;
+            margin-left: 50px;
+            margin-right: 50px;
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 15px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .leftSideFeatured{
+            background-color: #92a7be;
+            background-image:  url(https://images.unsplash.com/photo-1588445396150-9b318274c76b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .rightSideFeatured{
+            background-image: url(https://media.fashionnetwork.com/m/a8b4/1545/9452/d97a/be66/7f78/8de6/391d/d7e4/fff5/fff5.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .featuredCollectionDiv{
+            width: 100%;
+            height: 17%;
+            margin-top: 660px;
+            padding-left: 50px;
+            color: white;
+        }
+        .posOffeaturedPara{
+            padding-left: 15%;
+        }
+        .featuredPara{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .whiteBtnShop{
+            height: 40px;
+            width: fit-content;
+            border-radius: 30px;
+            background-color: white;
+            color: black;
+            padding-left: 27px;
+            padding-right: 27px;
+            border: 0px;
+        }
+        .whiteBtnShop:hover{
+            opacity: .7;
+        }
+
+        #ten{
+            grid-area: j;
+            height: 120px;
+            margin-left: 50px;
+            margin-right: 50px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        #eleven{
+            grid-area: k;
+            height: 700px;
+            margin-left: 50px;
+            margin-right: 50px;
+            display: grid;
+            grid-template-columns: auto auto;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .leftTrending{
+            background-image: url(https://images.unsplash.com/photo-1619684736572-cf0a43823d87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fG5pa2UlMjB0cmVuZGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .rightTrending{
+            background-image: url(https://images.unsplash.com/photo-1615461469775-9d244476325f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTN8fG5pa2UlMjB0cmVuZGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+            background-repeat: no-repeat;
+            background-size: 100% 99.5%;
+        }
+
+        #twelve {
+            grid-area: l;
+            height: 350px;
+        }
+
+
+        #thirteen {
+            grid-area: m;
+            border: 1px solid transparent;
+            height: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .divHeading {
+            font-weight: 500;
+        }
+
+        #fourteen {
+            grid-area: n;
+            border: 1px solid transparent;
+            height: 600px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        #fifthteen {
+            grid-area: o;
+            border: 1px solid transparent;
+            margin-left: 50px;
+            margin-right: 50px;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .shopBtnBlack {
+            width: 95px;
+            height: 42px;
+            border-radius: 30px;
+            background-color: black;
+            color: white;
+            border: 0px;
+            margin: 10px;
+        }
+        .shopBtnBlackBig{
+            width: 150px;
+            height: 42px;
+            border-radius: 30px;
+            background-color: black;
+            color: white;
+            border: 0px;
+            margin: 5px;
+        }
+
+        .exploreBtn {
+            width: 200px;
+            height: 42px;
+            border-radius: 30px;
+            background-color: black;
+            color: white;
+            border: 0px;
+            margin: 10px;
+        }
+
+        .exploreBtn:hover {
+            background-color: #32322D;
+        }
+
+        .shopBtnBlack {
+            width: 95px;
+            height: 42px;
+            border-radius: 30px;
+            background-color: black;
+            color: white;
+            border: 0px;
+            margin-bottom: 10px;
+        }
+
+        .shopBtnBlack:hover {
+            background-color: #32322D;
+        }
+
+        #sixteen{
+            grid-area: p;
+            height: 60px;
+            margin-left: 50px;
+            margin-right: 50px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        #seventeen{
+            grid-area: q;
+            height: 500px;
+            margin-left: 50px;
+            margin-right: 50px;
+            font-family: 'Open Sans', sans-serif;
+
+        }
+
+        #eigthteen {
+            grid-area: r;
+            border: 1px solid transparent;
+            margin-left: 50px;
+            margin-right: 50px;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        #nineteen {
+            grid-area: s;
+            border: 1px solid transparent;
+            height: 60px;
+            margin-left: 50px;
+            margin-right: 50px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        #Twenty {
+            grid-area: t;
+            border: 1px solid transparent;
+            height: 500px;
+            margin-left: 50px;
+            margin-right: 50px;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 15px;
+        }
+        #Twentyone{
+            grid-area: u;
+            height: fit-content;
+            margin-left: -10px;
+            margin-right: -10px;
+            margin-bottom: -10px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+
+
+        div>#btn {
+            width: 35%;
+            border: 1px solid transparent;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-top: 660px;
+            padding-left: 50px;
+            height: 70vh;
+        }
+
+        .whiteBtnShopMoreNike{
+            margin-top: 400px;
+            margin-left: -150px;
+        }
+
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+        
+
+        #twelve{
+            grid-area: l;
+            height: 350px;
+            margin-left: 50px;
+            margin-right: 50px;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+        }
+         /*footer*/
+         .footermaindiv{
+            background-color: rgba(0, 0, 0, 0.938);
+            width: 100%;
+        }
+        .footerContainer{
+            display: flex;
+            justify-content: space-between;
+        }
+        .footerDiv1{
+            width: 60%;
+            display: flex;
+        font-family:Helvetica;
+        justify-content: space-between;
+            font-size: 13px;
+        }
+        .unorderlist>li{
+            list-style: none;
+        }
+        .anchortextcolor{
+            text-decoration: none;
+            color: gray;
+        }
+        .footerDiv1 a:hover{
+            color: white;
+        }
+        .unorderlist{
+            line-height: 2.3;
+        }
+        .anchorhead{
+            color: white;
+            text-decoration: none;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 2.3;
+        }
+        .iconContainer{
+            display: flex;
+            margin-right: 4%;
+            justify-content: space-between;
+            margin-top: 3%;
+        }
+        .iconContainer>div{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%; 
+            font-size: 20px;
+            background-color: grey;
+        }
+        .icondiv{
+            margin-right: 10px;
+        }
+        .icon{
+            color: black;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 17%;
+        }
+        .location{
+            display: flex;
+            height: 50px;
+            width: 63%;
+        }
+        .policies{
+            margin-right: 3%;
+            font-size: 13px;
+            width: 37%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1%;
+        }
+        .policies a{
+            font-size: 11px;
+        }
+        .policies a:hover{
+            color:white;
+        }
+        #horizontalline{
+            height: 0.1mm;
+            border: 0px;
+            background-color: rgba(128, 128, 128, 0.288);
+        }
+
+        #footerlabel{
+            color: grey;
+            font-size: 11px;
+            margin-left: 15px;
+            margin-top: 8px;
+        }
+        #mapicon{
+            color: white;
+        }
+        .bottomfooter{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 3%;
+            font-family:Helvetica;
+        }
+
+    
+    
+        /*media queries*/
+    @media only screen and (max-width: 1050px) {
+            .throwBack{
+                width: 90%;
+                font-size: 48px;
+                line-height: 42px;
+            }
+            .raceDayEveryday{
+                font-size: 58px;
+                word-break: normal;
+
+            }
+            .raceDay{
+                width: 50%;
+            }
+            #bar{
+                width: 17%;
+                margin-left: 77%;
+            }
+        }
+        @media only screen and (max-width: 1040px) {
+            .raceDay{
+                width: 60%;
+            }
+            #bar{
+                width: 20%;
+                margin-left: 77%;
+            }
+            .div2{
+              display: flex;
+              margin-right: 0px;
+              margin-left: 0px;
+          }
+          .searchPdts{
+                width: 120px;
+            }
+            .div4 > div{
+                margin-left: 30px;
+                width: 100%;
+            }
+            .div4 > div > span{ 
+                height: 62%;
+                font-size: 22px;
+                padding-left: 12px;
+            }
+            .spanClass{
+                margin-top: 10px;
+            }
+        }
+        @media only screen and (max-width: 786px) {
+            .featuredCollectionDiv{
+                padding-left: 10px;
+            }
+            .styleStep{
+                font-size: 37px;
+            }
+            .styleStepLines{
+                width: 70%;
+            }
+            .familiarBtn{
+                margin-top: 30px;
+                margin-left: 10px;
+            }
+            #four{
+                background-size: 100% 100%;
+            }
+            #bar{
+                width: 25%;
+                margin-left: 67%;
+            }
+            .div4 > div{
+                margin-left: 10px;
+                width: 100%;
+            }
+            .div4 > div > span{ 
+                height: 62%;
+                font-size: 20px;
+                padding-left: 9px;
+            }
+            .spanClass{
+                margin-top: 10px;
+            }
+            .div2{
+              display: flex;
+              margin-right: 0px;
+              margin-left: -30px;
+          }
+          .div2 > div {
+              margin-right: 7px;
+              font-size: 15px;
+          }
+          .searchPdts{
+                width: 100px;
+                margin-left: 0px;
+          }
+          .sizeOfSearch{
+                font-size: 14px;
+                position: absolute;
+                margin-top: 20px;
+                margin-left: 10px;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            #seven{
+                text-align: left;
+                padding-left: 15px;
+            }
+            #twelve{
+                text-align: left;
+            }
+            #fifthteen{
+                text-align: left;
+            }
+            #eigthteen{
+                text-align: left;
+            }
+            #Twenty {
+                display: grid;
+                grid-template-columns: auto;
+                row-gap: 10px;
+                height: fit-content;
+            }
+            #Twenty > div{
+                height: 500px;
+            }
+            .holiday{
+                padding-left: 3px;
+            }
+            .throwBack{
+                width: 90%;
+                font-size: 38px;
+                line-height: 42px;
+                margin-top: 10px;
+                margin-left: 10px;
+                font-weight:bolder;
+                word-wrap: break-word;
+            }
+            .givJoy{
+                margin-left: -4px;
+            }
+            .nikeAirMaxDawn{
+                padding-left: 9px;
+            }
+            .nikeAirMaxPreDay{
+                padding-left: 19px;
+            }
+            .familiarLines{
+                width: 90%;
+                margin-left: 10px;
+                margin-top: 35px;
+                
+            }
+            .familiarBtn{
+                margin-top: 40px;
+                margin-left: 10px;
+            }
+            #nine{
+                grid-area: i;
+                border: 1px solid red;
+                display: grid;
+                grid-template-columns: auto;
+                row-gap: 10px;
+                height: fit-content;
+            }
+            .featuredCollectionDiv{
+                padding-left: 10px;
+            }
+            .whiteBtnShop{
+                margin-bottom: 20px;
+            }
+            #eleven{
+            
+                display: grid;
+                grid-template-columns: auto ;
+            }
+            .leftTrending{
+                background-image: url(https://static.nike.com/a/images/f_auto/dpr_3.0,cs_srgb/w_371,c_limit/0b78efcf-21b5-4b2f-a0ae-f1045dde56f4/nike-just-do-it.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+            .dontShow{
+                display: none;
+            }
+            #twelve{
+                text-align: left;
+            }
+            .styleStep{
+                width: 60%;
+                font-size: 48px;
+                line-height: 60px;
+                margin-top: 5px;
+                margin-left: 15px;
+                font-weight:bolder;
+                word-wrap: break-word;
+            }
+            .styleStepLines{
+                width: 65%;
+                margin-top: 20px;
+                margin-left: 15px;
+            }
+            .shopBtnBlack{
+                margin-top: 10px;
+            }
+            .raceDayEveryday{
+                font-size: 48px;
+                word-break: normal;
+
+            }
+            #bar{
+                width: 30%;
+                margin-left: 56%;
+            }
+            .div4 > div{
+                margin-left: 0px;
+                width: 100%;
+            }
+            .div4 > div > span{ 
+                height: 62%;
+                font-size: 20px;
+                padding-left: 5px;
+            }
+            .spanClass{
+                margin-top: 15px;
+            }
+            .div2{
+              display: flex;
+              margin-right: 0px;
+              margin-left: -30px;
+          }
+          .div2 > div {
+              margin-right: 7px;
+              font-size: 14px;
+          }
+          .searchPdts{
+                display: none;
+          }
+          .sizeOfSearch{
+                font-size: 16px;
+                position: absolute;
+                margin-top: 20px;
+                margin-left: 60px;
+            }
+            .sizeOfSearch:hover{
+                color: gray;
+            }
+                #Twentyone{
+                display: flex;
+                flex-direction: column;
+            }
+            .footerContainer{
+                display: flex;
+                flex-direction: column;
+            }
+            .footerDiv1{
+                display: flex;
+                flex-direction: column;
+            }
+            .iconContainer{
+                display: flex;
+                margin-right: 4%;
+                justify-content:left;
+                margin-top: 3%;
+                margin-left: 40px;
+            }
+            .bottomfooter,policies{
+                margin-left: 50px;
+                display: flex;
+                flex-direction: column;
+            }
+            .location,.policies{
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+            }
+            .policies{
+                margin-top: 30px;
+            }
+        }
+       
+        /*sign in & sign up css*/
+        #signInContainer{
+            width: 420px;
+            height: 489.67px;
+            margin: auto;
+            margin-top: 25px;
+            background-color: white;
+            z-index: 1;
+            left: 420px;
+            position:absolute;
+            animation-name: animatetop;
+        animation-duration: 0.4s;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        }
+        #signUpContainer{
+            width: 420px;
+            height: fit-content;
+            margin: auto;
+            background-color: white;
+            margin-top: 25px;
+            padding: 10px;
+            z-index: 5;
+            left: 420px;
+            position:absolute;
+            animation-name: animatetop;
+        animation-duration: 0.4s;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        }
+        @keyframes animatetop {
+            from {bottom: -300px; opacity: 0}
+            to {bottom: 0; opacity: 1}
+        }
+        .signInFlex{
+            display: flex;
+        }
+        .nikeLogoBox{
+            width: 60px;
+            height:  50px;
+            margin: auto;
+            margin-top: 10px;
+            margin-left: 170px;
+        }
+        .crossLogo{
+            width: 5%;
+            height: 22px;
+            margin: 10px;
+        }
+        .signInHeading{
+            width: 60%;
+            font-size: 22px;
+            line-height: 26px;
+            font-weight: bold;
+            margin: auto;
+            margin-top: 15px;
+            text-align: center;
+            letter-spacing: 0px;
+            margin-bottom: 16px;
+        }
+        .signUpHeading{
+            width: 80%;
+            font-size: 22px;
+            line-height: 26px;
+            font-weight: bold;
+            margin: auto;
+            margin-top: 15px;
+            text-align: center;
+            letter-spacing: 0px;
+            margin-bottom: 16px;
+        }
+        .signInInput{
+            width: 80%;
+            height: 40px;
+            border-radius: 5px;
+            border:  1px solid #d6d6d6;
+            padding-left: 15px;
+            margin-left: 37px;
+            margin-top: 17px;
+        }
+        .marginsOfSignUp{
+            margin-top: 30px;
+        }
+        .labelCheckbox{
+            display: flex;
+            color: #8D8D8D;
+            font-size: 12px;
+            margin-top: 25px;
+        }
+        .signInCheckbox{
+            width: 15px;
+            height: 15px;
+            background-color: white;
+            color: black;
+            margin-left: 40px;
+            margin-right: 15px;
+        }
+        .signUpCheckbox{
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            color: black;
+            margin-left: 40px;
+            margin-right: 15px;
+        }
+        .signInPara{
+            margin-top: 25px;
+            color: #a5a5a5;
+            font-size: 12px;
+            margin-left: 70px;
+        }
+        .termsOfUsePara{
+            width: 83%;
+            font-size: 12px;
+            margin-left: 35px;
+            color: #8D8D8D;
+            text-align: center;
+        }
+        .policyTerms{
+            text-decoration: underline;
+        }
+        .signInButton{
+            width: 84%;
+            height: 40px;
+            background-color: black;
+            border-radius: 3px;
+            border: 0px;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            margin-left: 35px;
+            margin-top: 10px;
+        }
+        .notMemberPara{
+            width: 83%;
+            font-size: 12px;
+            margin-left: 35px;
+            color: #8D8D8D;
+            text-align: center;
+        }
+        .notMemberParaSpan{
+            text-decoration: underline;
+            color: black;
+        }
+        .paras{
+            width: 80%;
+            color: #8D8D8D;
+            font-size: 13px;
+            margin: auto;
+            text-align: center;
+        }
+        .positionOfTick{
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            margin-top: 13px;
+            margin-left: 20px;
+        }
+        .tickNoShow{
+            display: none;
+        }
+        .autobuttons{
+            width: 70%;
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 20px;
+            margin: auto;
+            margin-top: 10px;
+        }
+        .male,.female{
+            width: 100%;
+            height: 40px;
+            background-color: white;
+            border: 1px solid #d6d6d6;
+            color: #797979;
+            border-radius: 5px;
+        }
+        .selected{
+            color: black;
+            width: 100%;
+            height: 40px;
+            background-color: white;
+            border: 1px solid #d6d6d6;
+            border-radius: 5px;
+        }
+        .tickShow{
+            display: block;
+        }
+        .labelCheckbox1{
+            color: #797979;
+            font-size: 12px;
+        }
+        .checkboxSignup{
+            width: 80%;
+            text-align: left;
+            margin: auto;
+            margin-top: 10px;
+        }
+        .cloneFlex{
+            display: flex;
+        }
+        .cloneGrid{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        #clone{
+                border: 1px solid transparent;
+                width: 700px;
+                height: 100%;
+                margin-left: 20px;
+            }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <!--navbar-->
+        <div id="one">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Jumpman_logo.svg/1200px-Jumpman_logo.svg.png" alt="" id="logo">
+            <div id="bar">
+                <button id="help" class="help"> <a href="help.html" style="color: black;"> Help</a></button>
+                <button id="join">Join us</button>
+                <button id="sign"><a onclick="modalClick()">Sign In</a></button>
+            </div>
+          </div>
+          <div id="two">
+            <div class="div1">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1200px-Logo_NIKE.svg.png" alt="logo" height="35%">
+            </div>
+            <div class="div2">
+                <div><a href="mens.html" style="color: black; font-size: large;">Men</a></div>
+                <div><a href="womens.html" style="color: black; font-size: large;">Women</a></div>
+                <div><a href="kids.html" style="color: black; font-size: large;">Kids</a></div>
+                <div> <a href="" style="color: black; font-size: large;"> Sale</a></div>
+                <div> <a href="mens.html" style="color: black; font-size: large;"> Costomise</a></div>
+                <div><a href="snkrs.html" style="color: black; font-size: large;">SNKRS</a></div>
+            </div>
+            <div class="div3">
+                <span><i class="fas fa-search sizeOfSearch"></i><input type="text" class="searchPdts" placeholder="Search"/></span>   
+           </div>
+           <div class="div4">
+                <div class="spanClass">
+                    <span><i class="far fa-heart"></i></span>
+                    <span class="bag"><i class="fas fa-shopping-bag"></i></span>
+                </div>
+           </div>
+        </div>
+        <div id="three">
+            <p class="helloNikeTab"> HELLO NIKE APP</p>
+            <p class="helloNikeTabText">Download the app to access everything Nike.<u> Get Your Great</u></p>    
+        </div>
+        <!--sign in and sign up pop ups-->
+        <div id="signInContainer">
+            <div class="signInFlex">
+                <div class="nikeLogoBox">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Logo_nike_principal.jpg" width="100%" height="100%"/>
+                </div>
+                <div class="crossLogo" id="crossLogo">
+                    <img src="https://w7.pngwing.com/pngs/374/900/png-transparent-computer-icons-christian-cross-icon-design-christian-cross.png" width="100%" height="100%"/>
+                </div>
+            </div>
+            <h3 class="signInHeading">YOUR ACCOUNT FOR EVERYTHING NIKE</h3>
+            <form action="" class="form-container">
+                <div id="signInEmailDiv">
+                    <input class="signInInput" type="text" placeholder="Email address" id="signInEmail"/>
+                </div>
+                <div id="signInPasswordDiv">
+                    <input class="signInInput" type="text" placeholder="Password" id="signInPassword"/>
+                </div>
+                <div class="signInFlex">
+                    <label class="labelCheckbox">
+                        <input type="checkbox" class="signInCheckbox" checked>
+                          Keep me signed in 
+                    </label>
+                    <p class="signInPara">Forgotten your password?</p>
+                </div>
+                <p class="termsOfUsePara">By logging in, you agree to Nike's&nbsp;<span class="policyTerms">Privacy Policy</span>&nbsp;and&nbsp;<span class="policyTerms">Terms of Use.</span></p>
+                <button class="signInButton" type="button" id="signInButton" onclick="validation()">SIGN IN</button>
+                <p class="notMemberPara">Not a Member?&nbsp;<span class="notMemberParaSpan" id="joinUs">Join Us.</span></p>
+            </form><br/>
+        </div>
+        <div id="signUpContainer">
+            <div class="signInFlex">
+                <div class="nikeLogoBox">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Logo_nike_principal.jpg" width="100%" height="100%"/>
+                </div>
+                <div class="crossLogo" id="crossLogo1">
+                    <img src="https://w7.pngwing.com/pngs/374/900/png-transparent-computer-icons-christian-cross-icon-design-christian-cross.png" width="100%" height="100%"/>
+                </div>
+            </div>
+            <h3 class="signUpHeading">BECOME A NIKE MEMBER</h3>
+            <p class="paras">Create your Nike Member profile and get first access to the very best of Nike products, inspiration and community.</p>
+            <form action="" class="form-container">
+                <div id="signUpEmailDiv">
+                    <input class="signInInput marginsOfSignUp" type="text" placeholder="Email address" id="signUpEmail"/>
+                </div>
+                <div id="signUpPasswordDiv">
+                    <input class="signInInput" type="text" placeholder="Password" id="signUpPassword"/>
+                </div>
+                <div id="firstNameDiv">
+                    <input class="signInInput" type="text" placeholder="First Name" id="firstName"/>
+                </div>
+                <div id="lastNameDiv">
+                    <input class="signInInput" type="text" placeholder="Last Name" id="lastName"/>
+                </div>
+                <div id="dobDiv">
+                    <input type="date" class="signInInput" placeholder="Date of Birth" id="dob" style="color: #8D8D8D"/>
+                </div>
+               <p class="notMemberPara">Get a Nike Member Reward every year on your Birthday.</p>
+               <select class="signInInput" id="country" style="color: #8D8D8D">
+                   <option value="India">India</option>
+                   <option value="Germany">Germany</option>
+                   <option value="Iceland">Iceland</option>
+                   <option value="Hungary">Hungary</option>
+                   <option value="Greece">Greece</option>
+                   <option value="Myanmar">Myanmar</option>
+                   <option value="Canada">Canada</option>
+                   <option value="Russia">Russia</option>
+                   <option value="Egypt">Egypt</option>
+                   <option value="Sudan">Sudan</option>
+               </select>
+               <div class=" autobuttons">
+                <div class="signInFlex">
+                    <img src="https://static.thenounproject.com/png/190431-200.png" class="tickNoShow positionOfTick" id="tick1"/>
+                    <input type="button" value="Male" id="male" onclick="addAttribute()" class="male"/>
+                </div>
+                <div class="signInFlex">
+                    <img src="https://static.thenounproject.com/png/190431-200.png" class="tickNoShow positionOfTick" id="tick2"/>
+                    <input type="button" value="Female" id="female" onclick="addAttribute()" class="female"/>
+                </div>
+               </div>
+               
+                <div class="checkboxSignup signInFlex">
+                    <input type="checkbox" class="signUpCheckbox" checked>
+                    <label class="labelCheckbox1">
+                        
+                        Sign up for emails to get updates from Nike on products, offers and your Member benefits
+                    </label>
+                </div>
+                <p class="termsOfUsePara">By creating an account, you agree to Nike's&nbsp;<span class="policyTerms">Privacy Policy</span>&nbsp;and&nbsp;<span class="policyTerms">Terms of Use.</span></p>
+                <button class="signInButton" type="button" id="signIUpButton">JOIN US</button>
+                <p class="notMemberPara">Already a Member?&nbsp;<span class="notMemberParaSpan" id="signIn">Sign In.</span></p>
+            </form>
+        </div>
+        <!--body-->
+        <div id="four" class=" cloneFlex">
+            <div class="raceDay">
+                <p class="nikeFly">Just In: Nike Zoom Fly 4</p>
+                <h1 class="raceDayEveryday">Race Day. Every Day.</h1>
+                <button class="shopBtnBlack posRaceDayBtn">Shop</button>
+            </div>
+            <div id="clone">
+                <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmlrZSUyMHNob2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="" width="100%" height="100%">
+            </div>
+        </div>
+        <div id="five"><h2 class="divHeading latestHeading">The Latest</h2></div>
+        <div id="six" class="cloneGrid">
+            <div>
+                <img src="https://images.unsplash.com/photo-1555895417-90b96a0485b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80" width="100%" height="100%"/>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1610970161790-57a21fc7d775?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUxfHxuaWtlJTIwc2hvZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" width="100%" height="100%"/>
+            </div>
+        </div>
+          <div id="seven">
+            <p class="nikeAirMaxDawn">Nike Air Max Dawn</p>
+            <h1 class="throwBack">A THROWBACK THAT MOVES FORWARD</h1>
+            <p class="familiarLines">With familiar lines and the refreshed silhouette, the Air Max dawn takes inspration from the post so that you can bring your style into the future.</p>
+            <button class="shopBtnBlack familiarBtn">Shop</button>
+        </div>
+
+        <div id="eigth"><h2 class="divHeading latestHeading">Featured</h2></div>
+        <div id="nine">
+            <div class="leftSideFeatured">
+                <div class="featuredCollectionDiv posOffeaturedPara">
+                    <p class="featuredPara ">Jordan Holiday Collection</p>
+                    <button class="whiteBtnShop">Shop</button>
+                </div>
+            </div>
+            <div class="rightSideFeatured">
+                <div class="featuredCollectionDiv">
+                    <p class="featuredPara">Your New fave Fit</p>
+                    <button class="whiteBtnShop">Check It Out</button>
+                </div>
+            </div>
+        </div>
+        <div id="ten"><h2 class="divHeading latestHeading">Trending</h2></div>
+        <div id="eleven">
+            <div class="leftTrending"></div>
+            <div class="rightTrending dontShow"></div>
+        </div>
+
+        <div id="twelve">
+            <p class="nikeAirMaxPreDay">Nike Air Max Pre-Day</p>
+            <h1 class="styleStep">STYLE IN EVERY STEP</h1>
+            <p class="styleStepLines">Refreshed in an eye-catching colourway that compliments every outfit, the Air Max Pre day gets you started off on the rigth foot. </p>
+            <button class="shopBtnBlack familiarBtn">Shop</button>
+        </div>
+
+
+        <div id="thirteen">
+            <h2 class="divHeading">Gift Guide</h2>
+        </div>
+        <div id="fourteen">
+            <iframe width="420" height="345" src="https://www.youtube.com/embed/E2-efiAcS3w?autoplay=1&mute=1&playlist=E2-efiAcS3w&loop=1&controls=0"
+                frameborder="0" allowfullscreen></iframe>
+        </div>
+
+
+        <div id="fifthteen">
+            <p class="holiday">Holiday Gifting</p>
+            <h1 class="throwBack givJoy">GIVE JOY FORWARD</h1>
+            <p>Checkout great gifting ideas and shop early for an extra easy holiday.</p>
+            <button class="shopBtnBlackBig">Explore Gift Guide</button>
+            <button class="shopBtnBlack">Shop</button>
+        </div>
+        
+        <div id="sixteen">
+            <h2 class="divHeading">Don't Miss</h2>
+        </div>
+
+        <div id="seventeen" style="background-repeat: no-repeat;background-size: cover;background-image: url(https://images.unsplash.com/photo-1527790833772-1b21209ce70b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fG5pa2UlMjBob3Jpem9udGFsJTIwaW1nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60)">
+        </div>
+        <div id="eigthteen">
+            <br>
+            <h1 class="styleStep">FIND YOUR FAST</h1>
+            <p class="styleStepLines">Our fastest family of shoes for everyday runs, training, and racing, refreshed in a vibrant new
+                colourway.</p>
+            <button class="shopBtnBlack">Shop</button>
+        </div>
+
+        <div id="nineteen">
+            <h2 class="divHeading">More Nike</h2>
+            
+        </div>
+        <div id="Twenty">
+            <div class="mensw" style="background-image: url(https://static.nike.com/a/images/f_auto/dpr_3.0,cs_srgb/h_500,c_limit/2885e1b3-3884-46fe-be7a-d15d8f4b535e/men-s-shoes-clothing-accessories.jpg); background-position: top center;"></div>
+            <div class="mensw" style="background-image: url(https://images.asos-media.com/groups/nike-womens-essential-black-tracksuit/26760-group-1?$n_640w$&wid=513&fit=constrain);"></div>
+           <div class="mensw" style="background-image: url(https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9ba28c62-18e2-4562-a610-b91f38b9cc6f/air-older-crop-jacket-8H9nnC.png); background-position: top center;"></div>
+        </div>
+           
+        </div>
+        <!--footer-->
+        <div id="Twentyone"><div class="footermaindiv">
+            <div class="footerContainer">
+                <div class="footerDiv1">
+                    <ul class="unorderlist">
+                        <li><a class="anchorhead" href="#">FIND STORE</a></li>
+                        <li><a class="anchorhead" href="#">BECOME A MEMBER</a></li>
+                        <li><a class="anchorhead" href="signin.html">SIGN UP FOR EMAL</a></li>
+                        <li><a class="anchorhead" href="#">STUDENT DISCOUNT</a></li>
+                        <li><a class="anchorhead" href="#">SEND US FEEDBACK</a></li>
+                    </ul>
+                    <ul class="unorderlist">
+                        <li><a class="anchorhead" href="#">GET HELP</a></li>
+                        <li><a  class="anchortextcolor" href="help.html">Order Status</a></li>
+                        <li><a class="anchortextcolor" href="help.html">Delivery</a></li>
+                        <li><a class="anchortextcolor" href="help.html">Returns</a></li>
+                        <li><a class="anchortextcolor" href="payment.html">Payment option</a></li>
+                        <li><a class="anchortextcolor" href="#">Contact Us On Nike.com Inquiries</a></li>
+                        <li><a class="anchortextcolor" href="#">Contact Us On Other Inquiries</a></li>
+                    </ul>
+                    <ul class="unorderlist">
+                        <li><a class="anchorhead" href="#">ABOUT NIKE</a></li>
+                        <li><a class="anchortextcolor" href="https://news.nike.com/">News</a></li>
+                        <li><a class="anchortextcolor" href="#">Careers</a></li>
+                        <li><a class="anchortextcolor" href="https://investors.nike.com/Home/default.aspx">Investors</a></li>
+                        <li><a class="anchortextcolor" href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="iconContainer">
+                     <div class="icondiv"><a class="icon" href="https://twitter.com/Nike?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></a></div>
+                     <div class="icondiv"><a class="icon" href="https://www.facebook.com/nike/"><i class="fab fa-facebook-f"></i></a></div>
+                     <div class="icondiv"><a class="icon" href="https://www.youtube.com/user/NIKE"><i class="fab fa-youtube"></i></a></div>
+                     <div><a class="icon" href="https://www.instagram.com/nike/?hl=en"><i class="fab fa-instagram"></i></a></div>
+                </div>
+               </div>
+               <hr id="horizontalline">
+               <div class="bottomfooter">
+                 <div class="location">
+                     <div>
+                        <a href="#"><i id="mapicon" class="fas fa-map-marker-alt"></i></a>
+                        <a class="anchorhead" href="#">India</a>
+                    </div>
+                 <label id="footerlabel">© 2021 Nike, Inc. All Rights Reserved</label>
+                 </div>
+                 <div class="policies">
+                    <a class="anchortextcolor" href="#">Guides</a>
+                    <a class="anchortextcolor" href="#">Terms of Sale</a>
+                    <a class="anchortextcolor" href="#">Terms of Use</a>
+                    <a class="anchortextcolor" href="#">Nike Privacy Policy</a>
+                 </div>
+               </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--Javascript part-->
+    <script type="text/javascript">
+                function modalClick() {
+                    modal.style.display = "block";
+                }
+                var modal = document.getElementById("signInContainer");
+                modal.style.display = "none";
+                var close = document.getElementById("crossLogo");
+                close.onclick = function() {
+                    modal.style.display = "none";
+                }
+                var modal2 = document.getElementById("signUpContainer");
+                modal2.style.display = "none";
+                var close1 = document.getElementById("crossLogo1");
+                close1.onclick = function() {
+                    modal2.style.display = "none";
+                    modal.style.display = "block";
+                }
+                
+                var signUpBtn = document.getElementById('joinUs');
+                signUpBtn.addEventListener('click',modal2Click);
+                var signIn = document.getElementById('signIn');
+                signIn.addEventListener('click',goToSignIn);
+                function goToSignIn(){
+                        modal2.style.display = "none";
+                        modal.style.display = "block";
+                    
+                }
+                
+                function modal2Click() {
+                    modal2.style.display = "block";
+                    modal.style.display = "none";
+                }
+
+                function addAttribute(){
+                   if(event.target.className === 'male'){
+                        var temp = event.target;
+                        temp.setAttribute('class','selected tickShow');
+                        document.getElementById('male').style.color = "black";
+                        document.getElementById('tick1').style.display="block";
+                        document.getElementById('tick2').style.display="none";
+                        document.getElementById('female').style.color = "#797979";
+                        document.getElementById('female').setAttribute('class','female');
+                        console.log(event.target.className)
+                   }
+                   if(event.target.className === 'female'){
+                        var temp = event.target;
+                        temp.setAttribute('class','selected tickShow');
+                        document.getElementById('female').style.color = "black";
+                        document.getElementById('tick2').style.display="block";
+                        document.getElementById('tick1').style.display="none";
+                        document.getElementById('male').style.color = "#797979";
+                        document.getElementById('male').setAttribute('class','male');
+                        console.log(event.target.className)
+                   }
+                }
+
+                //sign up process
+                var signUpInfo = document.getElementById("signIUpButton");
+                signUpInfo.addEventListener("click", signUp);
+                var userData = JSON.parse(localStorage.getItem("userDatabase")) || [];
+                function signUp() {
+                    console.log("I'm here");
+                    var email = document.getElementById("signUpEmail").value;
+                    var password = document.getElementById("signUpPassword").value;
+                    var firstName = document.getElementById("firstName").value;
+                    var lastName = document.getElementById("lastName").value;
+                    var dob = document.getElementById('dob').value;
+                    if(email === '' || email === undefined){
+                        console.log('email is empty')
+                        var error03 = document.createElement('p');
+                        error03.innerHTML = "Please enter a valid email";
+                        error03.style.fontSize = "12px";
+                        error03.style.color = "red";
+                        error03.style.marginLeft = "35px";
+                        var div03 = document.getElementById('signUpEmailDiv');
+                        console.log(div03)
+                        div03.appendChild(error03);
+                    }
+                    else if(password === '' || password === undefined){
+                        console.log('password is empty')
+                        var error04 = document.createElement('p');
+                        error04.innerHTML = "Please enter a valid password";
+                        error04.style.fontSize = "12px";
+                        error04.style.color = "red";
+                        error04.style.marginLeft = "35px";
+                        var div04 = document.getElementById('signUpPasswordDiv');
+                        console.log(div04)
+                        div04.append(error04);
+                    }
+                    else if(firstName === '' || firstName === undefined){
+                        console.log('firstName is empty')
+                        var error05 = document.createElement('p');
+                        error05.innerHTML = "Please enter a valid First Name";
+                        error05.style.fontSize = "12px";
+                        error05.style.color = "red";
+                        error05.style.marginLeft = "35px";
+                        var div05 = document.getElementById('firstNameDiv');
+                        console.log(div05)
+                        div05.append(error05);
+                    }
+                    else if(lastName === '' || lastName === undefined){
+                        console.log('lastName is empty')
+                        var error01 = document.createElement('p');
+                        error01.innerHTML = "Please enter a valid Last Name";
+                        error01.style.fontSize = "12px";
+                        error01.style.color = "red";
+                        error01.style.marginLeft = "35px";
+                        var div01 = document.getElementById('lastNameDiv');
+                        console.log(div01)
+                        div01.append(error01);
+                    }
+                    else if(dob === '' || dob === undefined){
+                        console.log('dob is empty')
+                        var error02 = document.createElement('p');
+                        error02.innerHTML = "Please enter a valid Date Of Birth";
+                        error02.style.fontSize = "12px";
+                        error02.style.color = "red";
+                        error02.style.marginLeft = "35px";
+                        var div02 = document.getElementById('dobDiv');
+                        console.log(div02)
+                        div02.append(error02);
+                    }
+                    else if((email !== '' || email !== undefined) && (password !== '' || password !== undefined) && (firstName !== '' || firstName !== undefined) && (lastName !== '' || lastName !== undefined) && (dob !== '' || dob !== undefined)){
+                        var gender;
+                        var tickedMale = document.getElementById('male').classList;
+                        console.log(tickedMale);
+                        if(tickedMale.contains('tickShow')){
+                            gender = "Male";
+                        }
+                        var tickedFemale = document.getElementById('female').classList;
+                        console.log(tickedFemale);
+                        if(tickedFemale.contains('tickShow')){
+                            gender = "Female";
+                        }
+
+                        var selection = document.getElementById('country').value;
+                        
+                        var userCred = {
+                            emailAdd: email,
+                            pass: password,
+                            firstName: firstName,
+                            lastName: lastName,
+                            dob: dob,
+                            selection: selection,
+                            gender: gender,
+                        };
+                        userData.push(userCred);
+                        localStorage.setItem("userDatabase", JSON.stringify(userData));
+                        goToSignIn();
+                    }
+                    
+                    
+                }
+
+                //sign in process
+                var signInValidation = document.getElementById("signInButton");
+                console.log(signInValidation)
+
+                function validation(){
+                    console.log("Sign in Validation");
+                    var dataOfUser = JSON.parse(localStorage.getItem("userDatabase"));
+                    var signInEmailEntry = document.getElementById('signInEmail').value;
+                    var signInPasswordEntry = document.getElementById('signInPassword').value;
+                    var isPresent  = false;
+                    dataOfUser.forEach(function(el){
+                        if((el.emailAdd === signInEmailEntry) && (el.pass === signInPasswordEntry)){
+                            isPresent = true;
+                            alert('Signed in successfully');
+                            modal.style.display = "none";
+                            return;
+                        }
+                    });
+                    if(isPresent === false){
+                        var error1 = document.createElement('p');
+                        error1.innerHTML = "Please enter a valid email address";
+                        error1.style.fontSize = "12px";
+                        error1.style.color = "red";
+                        var error2 = document.createElement('p');
+                        error2.innerHTML = "Please enter a valid password";
+                        error2.style.fontSize = "12px";
+                        error2.style.color = "red";
+                        error2.style.marginLeft = "35px";
+                        error1.style.marginLeft = "35px";
+                        var div1 = document.getElementById('signInEmailDiv');
+                        var div2 = document.getElementById('signInPasswordDiv');
+                        console.log(div1,div2)
+                        div1.append(error1);
+                        div2.append(error2);
+                    }
+                }
+    </script>
+</body>
+
+
+<!--end of landing page-->
+</html>

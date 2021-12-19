@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sneakers Product</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f7879b5792.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        /* header css part */
+        #one {
+            grid-area: a;
+            height: 30px;
+            background-color: ghostwhite;
+            border: 0;
+            display: flex;
+            margin-left: -10px;
+            margin-right: -10px;
+            margin-top: -8px;
+            padding-top: 5px;
+        }
+
+        #logo {
+            width: 30px;
+            height: 30px;
+            padding-left: 45px;
+        }
+
+        #bar {
+            width: 13%;
+            height: 90%;
+            margin-left: 80%;
+            display: flex;
+            border: 0px;
+        }
+
+        #help {
+            padding-left: 5px;
+            padding-right: 5px;
+            width: 50px;
+
+        }
+
+        #join {
+            padding-left: 7px;
+            padding-right: 7px;
+        }
+
+        #join,
+        #help {
+            border-right: 1px solid black;
+        }
+
+        #sign {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        #join,
+        #help,
+        #sign {
+            background-color: transparent;
+            border: 0px;
+        }
+
+        #two {
+            grid-area: b;
+            border-radius: 10px;
+            height: 55px;
+            display: grid;
+            grid-template-columns: 30% 40% 20% 10%;
+            background-color: white;
+        }
+
+        .div1 {
+            height: 60px;
+
+        }
+
+        .div1>img {
+            margin-top: 4%;
+            margin-left: 7%;
+            height: 35%;
+            width: 15%;
+        }
+
+        .div2 {
+            display: flex;
+            margin-right: 0px;
+            margin-left: 10%;
+        }
+
+        .div2>div {
+
+            height: 20px;
+            margin-right: 20px;
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 18px;
+        }
+
+        .div2>div:hover {
+            color: #777777;
+        }
+
+        .div3 {
+            height: 60px;
+            display: flex;
+
+        }
+
+        .div3>input {
+            margin-left: 20%;
+            margin-top: 2.5%;
+            height: 50%;
+        }
+
+        .sizeOfSearch {
+            font-size: 18px;
+            position: absolute;
+            margin-top: 16px;
+            margin-left: 60px;
+        }
+
+        .searchPdts {
+            width: 150px;
+            height: 37px;
+            margin-top: 10px;
+            margin-left: 50px;
+            border-radius: 20px;
+            border: 0px;
+            background-color: #F5F5F5;
+            padding-left: 40px;
+        }
+
+        .searchPdts:hover {
+            background-color: #d1d1d1;
+        }
+
+        .div4>div>span {
+
+            height: 62%;
+            font-size: 30px;
+            padding-left: 18px;
+
+        }
+
+        .spanClass {
+            margin-left: 5%;
+            margin-top: 7px;
+        }
+
+        .bag {
+            border-radius: 90px;
+        }
+
+
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+
+        /* product css part */
+        #productHead {
+            width: 570px;
+            margin-left: 2%;
+            height: 60px;
+            border: 1px solid transparent;
+            border-bottom: 1px solid rgb(170, 167, 167);
+            text-align: left;
+            margin: left;
+            display: flex;
+        }
+
+        #productHead>h1 {
+            margin: 8px;
+        }
+
+        #buttonDivs {
+            width: 95%;
+            height: 60px;
+            border: 1px solid transparent;
+            border-bottom: 1px solid rgb(170, 167, 167);
+            text-align: left;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        .selectBtn {
+            padding: 10px 15px;
+            margin-right: 2%;
+            font-size: 18px;
+            border-radius: 10px;
+            background-color: none;
+            margin-top: 5px;
+
+        }
+
+        .clearBtn {
+            padding: 10px 15px;
+            font-size: 18px;
+            border-radius: 10px;
+            background-color: transparent;
+            margin-top: 5px;
+            border: 1px solid gray;
+        }
+
+        .clearBtn:hover {
+            background-color: rgb(221, 216, 216);
+        }
+
+        .selectBtn:hover {
+            background-color: rgb(221, 216, 216);
+        }
+
+        #productDisplay {
+            width: 93%;
+            border: 1px solid transparent;
+            margin: auto;
+            margin-top: 10px;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 10px;
+        }
+
+        #products>div {
+            border: 1px solid transparent;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        img {
+            width: 100%;
+            height: 350px;
+        }
+
+        h3 {
+            padding-left: 2%;
+            margin-top: 0%;
+            margin-bottom: 1%;
+            font-size: 18px;
+        }
+
+        p {
+            padding-left: 2%;
+            margin-top: 0%;
+            margin-bottom: 1%;
+        }
+
+        p:hover {
+            color: red;
+        }
+
+        #bag {
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 15px;
+            background-color: transparent;
+            border: 1px solid rgb(173, 170, 170);
+        }
+
+        #bag:hover {
+            color: white;
+            cursor: pointer;
+            background-color: blue;
+        }
+
+        /* footer css part */
+        #eigthteen {
+            width: 100%;
+            background-color: black;
+        }
+
+        .footerContainer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footerDiv1 {
+            width: 60%;
+            display: flex;
+            font-family: Helvetica;
+            justify-content: space-between;
+            font-size: 13px;
+        }
+
+        .footerDiv1 a:hover {
+            color: white;
+        }
+
+        .unorderlist>li {
+            list-style: none;
+        }
+
+        .unorderlist {
+            line-height: 2.3;
+        }
+
+        .anchorhead {
+            color: white;
+            text-decoration: none;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 2.3;
+        }
+
+        .anchortextcolor {
+            text-decoration: none;
+            color: gray;
+        }
+
+        .iconContainer {
+            display: flex;
+            margin-right: 4%;
+            justify-content: space-between;
+            margin-top: 3%;
+        }
+
+        .iconContainer>div {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            font-size: 20px;
+            background-color: grey;
+        }
+
+        .icondiv {
+            margin-right: 10px;
+        }
+
+        .icon {
+            color: black;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 17%;
+        }
+
+        #horizontalline {
+            height: 0.1mm;
+            border: 0px;
+            background-color: rgba(128, 128, 128, 0.288);
+        }
+
+        .bottomfooter {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 3%;
+            font-family: Helvetica;
+        }
+
+        .location {
+
+            height: 50px;
+            width: 63%;
+        }
+
+        #mapicon {
+            color: white;
+        }
+
+        .anchorhead {
+            color: white;
+            text-decoration: none;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 2.3;
+        }
+
+        #footerlabel {
+            color: grey;
+            font-size: 11px;
+            margin-left: 15px;
+        }
+
+        .policies {
+            margin-right: 3%;
+            font-size: 13px;
+            width: 37%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1%;
+        }
+
+        .policies a {
+            font-size: 11px;
+        }
+
+        .policies a:hover {
+            color: white;
+        }
+
+
+        /* products css ends here */
+        @media only screen and (min-width: 421px) and (max-width: 768px) {
+            #productDisplay {
+                width: 93%;
+                border: 1px solid transparent;
+                margin: auto;
+                margin-top: 10px;
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: repeat(2, 1fr);
+                padding: 10px;
+            }
+
+            #buttonDivs {
+                width: 95%;
+                height: 120px;
+                border: 1px solid transparent;
+                border-bottom: 1px solid rgb(170, 167, 167);
+                text-align: left;
+                margin: auto;
+                margin-top: 15px;
+            }
+        }
+
+
+
+        @media only screen and (min-width: 0px) and (max-width: 420px) {
+
+            #productHead {
+                width: 400px;
+                margin-left: 2%;
+                height: 100px;
+                border: 1px solid transparent;
+                border-bottom: 1px solid rgb(170, 167, 167);
+                text-align: left;
+                margin: left;
+
+            }
+
+            #productDisplay {
+                width: 93%;
+                border: 1px solid transparent;
+                margin: auto;
+                margin-top: 10px;
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: repeat(1, 1fr);
+                padding: 10px;
+            }
+
+            #buttonDivs {
+                width: 95%;
+                height: 170px;
+                border: 1px solid transparent;
+                border-bottom: 1px solid rgb(170, 167, 167);
+                text-align: left;
+                margin: auto;
+                margin-top: 15px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="one">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Jumpman_logo.svg/1200px-Jumpman_logo.svg.png"
+            alt="" id="logo">
+        <div id="bar">
+            <button id="help" class="help">Help</button>
+            <button id="join">Join us</button>
+            <button id="sign"><a onclick="modalClick()">Sign In</a></button>
+        </div>
+    </div>
+    <div id="two">
+        <div class="div1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1200px-Logo_NIKE.svg.png"
+                alt="logo" height="35%">
+        </div>
+        <div class="div2">
+            <div><a href="mens.html">Men</a></div>
+            <div><a href="womens.html">Women</a></div>
+            <div><a href="kids.html">Kids</a></div>
+            <div><a href="snkrs.html">SNKRS</a></div>
+        </div>
+        <div class="div3">
+            <span><i class="fas fa-search sizeOfSearch"></i><input type="text" class="searchPdts"
+                    placeholder="Search" /></span>
+        </div>
+        <div class="div4">
+            <div class="spanClass">
+                <span><i class="far fa-heart"></i></span>
+                <!-- <span class="bag"><i class="fas fa-shopping-bag"></i></span> -->
+                <span class="bag"><a href="bagitems.html"><i id="bagicon" class="fas fa-shopping-bag"></i></a></span>
+
+            </div>
+        </div>
+    </div>
+    <!-- //products section starts from here -->
+    <div id="productHead">
+        <h1 id="bagcount">
+        </h1>
+    </div>
+
+
+    <div id="buttonDivs">
+        <select name="gender" id="genderBtn" onchange="filtergender()" class="selectBtn">
+            <option value="">Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+
+        <select name="kids" id="kidsBtn" onchange="filterkids()" class="selectBtn">
+            <option value="">Kids</option>
+            <option value="Boys">Boys</option>
+            <option value="Girls">Girls</option>
+        </select>
+
+        <select name="Brand" id="brand" onchange="filterbrand()" class="selectBtn">
+            <option value="">Brand</option>
+            <option value="Nike By You">Nike By You</option>
+        </select>
+
+        <select name="Size" id="size" onchange="filtercolor()" class="selectBtn">
+            <option value="">color</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="White">White</option>
+            <option value="Gray">Gray</option>
+            <option value="Black">Black</option>
+        </select>
+        <select name="Price" id="price" onchange="sortPrice()" class="selectBtn">
+            <option value="">Price</option>
+            <option value="Low">Low To High</option>
+            <option value="High">High To Low</option>
+        </select>
+        <button onclick="clearAll()" class="clearBtn">Clear</button>
+    </div>
+
+    <div id="productDisplay">
+        <!-- <div></div>
+        <div></div>
+        <div></div>
+        <div></div> -->
+    </div>
+
+    <div id="eigthteen">
+        <div class="footermaindiv">
+            <div class="footerContainer">
+                <div class="footerDiv1">
+                    <ul class="unorderlist">
+                        <li><a class="anchorhead" href="#">FIND STORE</a></li>
+                        <li><a class="anchorhead" href="#">BECOME A MEMBER</a></li>
+                        <li><a class="anchorhead" href="#">SIGN UP FOR EMAL</a></li>
+                        <li><a class="anchorhead" href="#">STUDENT DISCOUNT</a></li>
+                        <li><a class="anchorhead" href="#">SEND US FEEDBACK</a></li>
+                    </ul>
+                    <ul class="unorderlist">
+                        <li><a class="anchorhead" href="#">GET HELP</a></li>
+                        <li><a class="anchortextcolor" href="help.html">Order Status</a></li>
+                        <li><a class="anchortextcolor" href="help.html">Delivery</a></li>
+                        <li><a class="anchortextcolor" href="help.html">Returns</a></li>
+                        <li><a class="anchortextcolor" href="#">Payment option</a></li>
+                        <li><a class="anchortextcolor" href="#">Contact Us On Nike.com Inquiries</a></li>
+                        <li><a class="anchortextcolor" href="#">Contact Us On Other Inquiries</a></li>
+                    </ul>
+                    <ul class="unorderlist">
+                        <li><a class="anchorhead" href="#">ABOUT NIKE</a></li>
+                        <li><a class="anchortextcolor" href="https://news.nike.com/">News</a></li>
+                        <li><a class="anchortextcolor" href="#">Careers</a></li>
+                        <li><a class="anchortextcolor" href="https://investors.nike.com/Home/default.aspx">Investors</a>
+                        </li>
+                        <li><a class="anchortextcolor" href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="iconContainer">
+                    <div class="icondiv"><a class="icon"
+                            href="https://twitter.com/Nike?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i
+                                class="fab fa-twitter"></i></a></div>
+                    <div class="icondiv"><a class="icon" href="https://www.facebook.com/nike/"><i
+                                class="fab fa-facebook-f"></i></a></div>
+                    <div class="icondiv"><a class="icon" href="https://www.youtube.com/user/NIKE"><i
+                                class="fab fa-youtube"></i></a></div>
+                    <div><a class="icon" href="https://www.instagram.com/nike/?hl=en"><i
+                                class="fab fa-instagram"></i></a></div>
+                </div>
+            </div>
+            <hr id="horizontalline">
+            <div class="bottomfooter">
+                <div class="location">
+                    <a href="#"><i id="mapicon" class="fas fa-map-marker-alt"></i></a>
+                    <a class="anchorhead" href="#">India</a>
+                    <label id="footerlabel">© 2021 Nike, Inc. All Rights Reserved</label>
+                </div>
+                <div class="policies">
+                    <a class="anchortextcolor" href="#">Guides</a>
+                    <a class="anchortextcolor" href="#">Terms of Sale</a>
+                    <a class="anchortextcolor" href="#">Terms of Use</a>
+                    <a class="anchortextcolor" href="#">Nike Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
+<script src="https://kit.fontawesome.com/3347d6e76d.js" crossorigin="anonymous"></script>
+<script>
+
+    // product datas
+
+    var products = [
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/1aa3abc4-692e-466b-b985-570a178f25ef/air-force-1-older-shoes-w6PsF3.png",
+            gender: "Boys",
+            brand: "Nike By You",
+            name: "Nike Air Force 1",
+            color: "White",
+            Price: 3117,
+            size: [6, 7, 8, 9, 10],
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/93d2b3aa-3024-4cda-9c70-a36acb2382c3/air-force-1-lv8-older-shoes-KKcPKZ.png",
+            gender: "Girls",
+            brand: "Nike By You",
+            name: "Nike Air Force 1 LV8",
+            color: "White",
+            Price: 6495,
+            size: [6, 7, 8, 9, 10],
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/73af1a96-b3a7-443f-9ed7-ea82fcfeedcd/jr-mercurial-superfly-8-academy-km-mg-younger-older-multi-ground-football-boot-n67H03.png",
+            gender: "Boys",
+            brand: "Nike By You",
+            name: "Nike Jr. Mercurial Superfly 8 Academy",
+            color: "Blue",
+            Price: 6995,
+            size: [6, 7, 8, 9, 10],
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/41a302c8-e177-4963-8e69-72ec150e6372/kyrie-infinity-se-older-basketball-shoes-q3V9WM.png",
+            gender: "Boys",
+            brand: "Nike By You",
+            name: "Kyrie Infinity SE",
+            color: "White",
+            Price: 7995,
+            size: [6, 7, 8, 9, 10],
+
+        },
+        {
+
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3cbf7850-8b59-41c5-8e3f-0a8c121b6f07/air-max-2021-older-shoes-dRthcp.png",
+            gender: "Boys",
+            brand: "Nike By You",
+            name: "Nike Air Max 2021",
+            color: "Black",
+            Price: 9995,
+            size: [6, 7, 8, 9, 10],
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/41a302c8-e177-4963-8e69-72ec150e6372/kyrie-infinity-se-older-basketball-shoes-q3V9WM.png",
+            gender: "Girls",
+            brand: "Nike By You",
+            name: "Nike Air Force 1 LV8",
+            color: "White",
+            Price: 6495,
+            size: [6, 7, 8, 9, 10],
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/68723e6a-f437-4c6d-94ab-479cb6dd91ac/sportswear-older-tracksuit-1G4VD8.png",
+            gender: "Boys",
+            brand: "Nike By You",
+            name: "Nike Sportswear",
+            color: "Red",
+            Price: 2995,
+            size: [6, 7, 8, 9, 10],
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/23913cc8-b01d-4a85-92a0-32a7b68311d8/jr-phantom-gt2-academy-tf-younger-older-football-shoe-8959hr.png",
+            gender: "Boys",
+            brand: "Nike By You",
+            name: "Nike Jr. Phantom GT2 Academy TF",
+            color: "Blue",
+            Price: 5495,
+            size: [6, 7, 8, 9, 10],
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d7f38772-b885-4b61-963e-9f3424ca9c7f/dunk-high-older-shoe-5g3xvG.png",
+            gender: "Boys",
+            brand: "Nike By You",
+            name: "Nike Dunk High",
+            color: "Black",
+            Price: 2285,
+            size: [6, 7, 8, 9, 10],
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8d2c081b-ac13-44d4-9ca3-1a70ee605634/force-1-le-younger-shoe-rg3gD7.png",
+            gender: "Boys",
+            brand: "Nike By You",
+            name: "Nike Force 1 LE",
+            color: "Black",
+            Price: 4499,
+            size: [6, 7, 8, 9, 10],
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d7acc9d9-f5a1-4696-84fa-685ee69dd37f/air-more-uptempo-older-shoes-44M0ct.png",
+            gender: "Boys",
+            brand: "Nike By You",
+            name: "Nike Air More Uptempo",
+            color: "Red",
+            Price: 9995,
+            size: [6, 7, 8, 9, 10],
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/71dd419c-30b1-4377-9187-9f62f4237691/air-zoom-pegasus-38-airnathan-bell-road-running-shoes-ndNHTP.png",
+            name: "Nike Air Zoom Pegasus 38 A.I.R.Nathan Bell",
+            brand: "Nike By You",
+            gender: "Male",
+            color: "Blue",
+            Price: 11495,
+            size: [6, 7, 8, 9, 10],
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/bf766eed-65b0-4c10-b922-4570192d5aa6/air-pegasus-83-shoes-dRccxf.png",
+            name: "Nike Air Pegasus 83 Premium",
+            brand: "Nike By You",
+            gender: "Male",
+            color: "White",
+            Price: 2195,
+            size: [6, 7, 8, 9, 10],
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/769b0671-49af-408d-8de0-56e2640634fe/air-huarache-le-shoes-wCfbvV.png",
+            name: "Nike Air Huarache LE",
+            brand: "Nike By You",
+            gender: "Male",
+            color: "Brown",
+            Price: 10295,
+            size: [6, 7, 8, 9, 10],
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/51a8c4a4-4ce3-44ba-9f6b-1d8e39764a05/jordan-zoom-separate-pf-basketball-shoes-kGPg2r.png",
+            name: "Jordan Zoom Separate PF",
+            brand: "Nike By You",
+            gender: "Male",
+            color: "Black",
+            Price: 9295,
+            size: [6, 7, 8, 9, 10],
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/39ae322e-da43-42e7-b8fc-7b7390c05ffb/sb-zoom-blazer-low-skate-shoes.png",
+            name: "SB Blazer Low x FPAR",
+            brand: "Nike By You",
+            gender: "Male",
+            color: "Gray",
+            Price: 8295,
+            size: [6, 7, 8, 9, 10],
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5350b291-6223-4df8-8181-962d83218a81/zoom-fly-4-road-running-shoes-rTFHwQ.png",
+            name: "Nike Zoom Fly 4",
+            brand: "Nike By You",
+            gender: "Male",
+            color: "Yellow",
+            Price: 14495,
+            size: [6, 7, 8, 9, 10],
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/cd6e10f8-d3bc-485b-ab2c-d49617a4e3bb/air-max-dawn-shoe-gq9GGH.png",
+            name: "Nike Air Max Dawn",
+            brand: "Nike By You",
+            gender: "Male",
+            color: "Blue",
+            Price: 7995,
+            size: [6, 7, 8, 9, 10],
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f37fca8-6bce-43e7-ad07-f57ae3c13142/air-force-1-07-shoe-WrLlWX.png",
+            name: "Nike Air Force 1 '07",
+            brand: "Nike By You",
+            gender: "Male",
+            color: "White",
+            Price: 7495,
+            size: [6, 7, 8, 9, 10],
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/57818374-f0eb-4213-b271-e6ed0b21347d/air-max-1-patta-shoes-jS3GnH.png",
+            name: "Nike Air Force 1 '07 LV8",
+            brand: "Nike By You",
+            gender: "Girls",
+            color: "Black",
+            Price: 8295,
+            size: [6, 7, 8, 9, 10],
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/57818374-f0eb-4213-b271-e6ed0b21347d/air-max-1-patta-shoes-jS3GnH.png",
+            name: "Nike Air Max 1 x Patta",
+            brand: "Nike By You",
+            gender: "Male",
+            color: "Red",
+            Price: 1549,
+            size: [6, 7, 8, 9, 10],
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/1ab12b53-6dd3-4e10-bd75-6624321574c2/zoom-004-mmw-shoe-f9gPnw.png",
+            name: "Nike Zoom 004 X MMW",
+            brand: "Nike By You",
+            gender: "Male",
+            color: "Black",
+            Price: 18495,
+            size: [6, 7, 8, 9, 10],
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8172fa79-2821-41ed-951d-7c316f958a09/waffle-one-se-shoe-8Qm3Hr.png",
+            name: "Nike Waffle One SE",
+            brand: "Nike By You",
+            gender: "Male",
+            color: "Red",
+            Price: 10495,
+            size: [6, 7, 8, 9, 10],
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a6bc6e5b-f35b-4b55-b555-34cf4a676c54/overbreak-shoes-bt74Jc.png",
+            name: "Nike Overbreak",
+            brand: "Nike By You",
+            gender: "Male",
+            color: "Cream",
+            Price: 13495,
+            size: [6, 7, 8, 9, 10],
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d197cb86-b1a6-495e-8988-d5a36db25aea/air-force-1-experimental-shoes-bp4ZqX.png",
+            name: "Nike Air Force 1 Experimental",
+            brand: "Nike By You",
+            gender: "Male",
+            color: "Black",
+            Price: 9495,
+            size: [6, 7, 8, 9, 10],
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/58903c0b-0afe-400e-8ac6-9bf3ccf940ba/air-max-pre-day-shoes-jMh2rB.png",
+            name: "Nike Air Max Pre-Day",
+            brand: "Nike By You",
+            gender: "Male",
+            color: "Black",
+            Price: 11495,
+            size: [6, 7, 8, 9, 10],
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b72d5987-443c-4a20-ba27-f98e711c5ab1/dunk-low-se-shoes-zmKqzw.png",
+            name: "Nike Dunk",
+            brand: "Nike By You",
+            gender: "Female",
+            color: "White",
+            Price: 18495,
+            size: [6, 7, 8, 9, 10],
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/56cbf3f1-1004-468d-90c8-0c1738e2b7c2/dunk-high-lx-shoes-4gJ041.png",
+            name: "Nike Dunk High LX",
+            brand: "Nike By You",
+            gender: "Female",
+            color: "Cream",
+            Price: 11495,
+            size: [6, 7, 8, 9, 10],
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5e266a82-cc5e-48f2-becf-1b88776c991b/zoom-fly-4-road-running-shoes-HMG6C0.png",
+            name: "Nike Zoom Fly 4",
+            brand: "Nike By You",
+            gender: "Female",
+            color: "Black",
+            Price: 15495,
+            size: [6, 7, 8, 9, 10],
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b72d5987-443c-4a20-ba27-f98e711c5ab1/dunk-low-se-shoes-zmKqzw.png",
+            name: "Nike Air Force 1 '07 LV8",
+            brand: "Nike By You",
+            gender: "Girls",
+            color: "Black",
+            Price: 8295,
+            size: [6, 7, 8, 9, 10],
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/99b5746b-3441-456d-80e3-a628a115b4d4/air-force-1-pixel-shoes-7wnvvn.png",
+            name: "Nike Air Force 1 Pixel",
+            brand: "Nike By You",
+            gender: "Female",
+            color: "Olive",
+            Price: 8495,
+            size: [6, 7, 8, 9, 10],
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0f3b5329-af6b-47cf-a9ee-de5ee81f1003/air-force-1-fontanka-shoes-LtBCnn.png",
+            name: "Nike Air Force 1 Fontanka",
+            brand: "Nike By You",
+            gender: "Female",
+            color: "Cream",
+            Price: 10495,
+            size: [6, 7, 8, 9, 10],
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-f1f1618e-4686-4efe-bafc-973e72e8b9a2/aqua-rift-shoes-C3VX3v.png",
+            name: "Nike Aqua Rift",
+            brand: "Nike By You",
+            gender: "Female",
+            color: "White",
+            Price: 9495,
+            size: [6, 7, 8, 9, 10],
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b5ad81cf-9e9b-4c29-9114-e8a8dea8ed7a/nikecourt-legacy-serena-design-crew-shoes-3n9JGl.png",
+            name: "NikeCourt Legacy Serena Design Crew",
+            brand: "Nike By You",
+            gender: "Female",
+            color: "Cream",
+            Price: 6495,
+            size: [6, 7, 8, 9, 10],
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3da3eacc-a092-4793-8e6e-735d52e5b5d4/air-max-ap-shoe-twPB9x.png",
+            name: "Nike Air Max AP",
+            brand: "Nike By You",
+            gender: "Female",
+            color: "Pink",
+            Price: 8495,
+            size: [6, 7, 8, 9, 10],
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/35b4b368-6e69-45d0-bc94-1b08e96e0d7b/flex-run-2021-road-running-shoes-HDXVTm.png",
+            name: "Nike Flex Run 2021",
+            brand: "Nike By You",
+            gender: "Female",
+            color: "Red",
+            Price: 9495,
+            size: [6, 7, 8, 9, 10],
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a86eed38-25b0-4ab0-acfe-1eb355b449e4/air-max-pre-day-shoes-gmmQLc.png",
+            name: "Nike Air Max Pre-Day",
+            brand: "Nike By You",
+            gender: "Female",
+            color: "Blue",
+            Price: 14495,
+            size: [6, 7, 8, 9, 10],
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4faea3f8-d668-40a2-bfe5-ab2a08681233/superrep-go-2-training-shoe-4vwVBM.png",
+            name: "Nike SuperRep Go 2",
+            brand: "Nike By You",
+            gender: "Female",
+            color: "Red",
+            Price: 5495,
+            size: [6, 7, 8, 9, 10],
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c9ad9365-8803-4d57-8115-298233519781/air-huarache-shoes-LNj6JQ.png",
+            name: "Nike Air Huarache",
+            brand: "Nike By You",
+            gender: "Female",
+            color: "Brown",
+            Price: 11495,
+            size: [6, 7, 8, 9, 10],
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6417b6dc-c08c-4c15-95df-4ca7eaeb72f0/air-jordan-11-retro-shoes-4x2Pv2.png",
+            name: "Air Jordan 11 Retro",
+            brand: "Nike By You",
+            gender: "Female",
+            color: "Black",
+            Price: 20495,
+            size: [6, 7, 8, 9, 10],
+        },
+    ]
+
+    //  moving datas to local storage   
+    localStorage.setItem("Sniker's Products", JSON.stringify(products));
+    displayItem(products)
+
+    document.querySelector("#bagcount").textContent = "Men's & Women's Shoes" + " " + "(" + products.length + ")";
+    console.log(products.length)
+    // this function will clear all the filtered item to back its original position    
+    function clearAll() {
+        location.reload();
+    }
+    //it will filter gender section
+    function filtergender() {
+        var genderselected = document.querySelector('#genderBtn').value;
+        console.log(genderselected)
+        var newproduct = products.filter(function (elem) {
+            return elem.gender == genderselected;
+        });
+        displayItem(newproduct);
+    }
+    //it will filter kids section
+    function filterkids() {
+        var kidsselected = document.querySelector('#kidsBtn').value;
+
+        var newproduct = products.filter(function (elem) {
+            return elem.gender == kidsselected;
+        });
+        displayItem(newproduct);
+    }
+    //this function will filter by color
+    function filtercolor() {
+        var categoryselected = document.querySelector('#size').value;
+
+        var newproduct = products.filter(function (elem) {
+            return elem.color == categoryselected;
+        });
+        console.log(newproduct)
+        displayItem(newproduct);
+    }
+    //this function will filter brand.
+    function filterbrand() {
+        var categoryselected = document.querySelector('#brand').value;
+
+        var newproduct = products.filter(function (elem) {
+            return elem.brand == categoryselected;
+        });
+        //console.log(newproduct)
+        displayItem(newproduct);
+    }
+
+    //this will sort price
+    function sortPrice() {
+        //console.log("Here")
+        var selected = document.querySelector("#price").value;
+        //console.log(selected)
+        if (selected == "Low")
+            products.sort(function (a, b) {
+                return a.Price - b.Price
+            })
+        //console.log(products)
+        if (selected == "High")
+            products.sort(function (a, b) {
+                return b.Price - a.Price
+            })
+        displayItem(products)
+    }
+
+    //this function display the products in the webpage
+
+    function displayItem(products) {
+
+        document.querySelector("#productDisplay").textContent = "";
+        products.map(function (elem) {
+
+            var div = document.createElement("div");
+            div.addEventListener("click", showprod);
+            var image = document.createElement("img");
+            image.setAttribute("src", elem.imgUrl);
+            var name = document.createElement("h3");
+            name.textContent = elem.name;
+            var color = document.createElement("p");
+            color.textContent = "1 color";
+            color.addEventListener("click", showcolor);
+
+            function showcolor(event) {
+                //console.log("here");
+                color.textContent = elem.color;
+            }
+
+
+
+            var price = document.createElement("h3");
+            price.textContent = elem.Price;
+
+            document.querySelector("#productDisplay").append(div);
+            div.append(image, name, color, price)
+            function showprod(event) {
+                console.log("here");
+                productDetails(elem)
+            }
+
+
+        })
+
+        function productDetails(elem) {
+
+            //var productPage = JSON.parse(localStorage.getItem("Men's Products"));
+
+            var productPage = [];
+
+            productPage.push(elem);
+            // console.log(productPage)
+            localStorage.setItem("productDetails", JSON.stringify(productPage));
+
+            window.location.href = "snikersdescription.html";
+        }
+
+
+    }
+
+</script>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/signIn.css"/>
+    <title>Sign In</title>
+</head>
+<body>
+    <p style="text-decoration: underline;" onclick="modalClick()">Sign In</p>
+    <div id="signInContainer">
+        <div class="signInFlex">
+            <div class="nikeLogoBox">
+                <img src="/images/nike.png" width="100%" height="100%"/>
+            </div>
+            <div class="crossLogo" id="crossLogo">
+                <img src="/images/close.png" width="100%" height="100%"/>
+            </div>
+        </div>
+        <h3 class="signInHeading">YOUR ACCOUNT FOR EVERYTHING NIKE</h3>
+        <form action="" class="form-container">
+            <div id="signInEmailDiv">
+                <input class="signInInput" type="text" placeholder="Email address" id="signInEmail"/>
+            </div>
+            <div id="signInPasswordDiv">
+                <input class="signInInput" type="text" placeholder="Password" id="signInPassword"/>
+            </div>
+            <div class="signInFlex">
+                <label class="labelCheckbox">
+                    <input type="checkbox" class="signInCheckbox" checked>
+                      Keep me signed in 
+                </label>
+                <p class="signInPara">Forgotten your password?</p>
+            </div>
+            <p class="termsOfUsePara">By logging in, you agree to Nike's&nbsp;<span class="policyTerms">Privacy Policy</span>&nbsp;and&nbsp;<span class="policyTerms">Terms of Use.</span></p>
+            <button class="signInButton" type="button" id="signInButton" onclick="validation()">SIGN IN</button>
+            <p class="notMemberPara">Not a Member?&nbsp;<span class="notMemberParaSpan" id="joinUs">Join Us.</span></p>
+        </form><br/>
+    </div>
+    <div id="signUpContainer">
+        <div class="signInFlex">
+            <div class="nikeLogoBox">
+                <img src="/images/nike.png" width="100%" height="100%"/>
+            </div>
+            <div class="crossLogo" id="crossLogo1">
+                <img src="/images/close.png" width="100%" height="100%"/>
+            </div>
+        </div>
+        <h3 class="signUpHeading">BECOME A NIKE MEMBER</h3>
+        <p class="paras">Create your Nike Member profile and get first access to the very best of Nike products, inspiration and community.</p>
+        <form action="" class="form-container">
+            <div id="signUpEmailDiv">
+                <input class="signInInput marginsOfSignUp" type="text" placeholder="Email address" id="signUpEmail"/>
+            </div>
+            <div id="signUpPasswordDiv">
+                <input class="signInInput" type="text" placeholder="Password" id="signUpPassword"/>
+            </div>
+            <div id="firstNameDiv">
+                <input class="signInInput" type="text" placeholder="First Name" id="firstName"/>
+            </div>
+            <div id="lastNameDiv">
+                <input class="signInInput" type="text" placeholder="Last Name" id="lastName"/>
+            </div>
+            <div id="dobDiv">
+                <input type="date" class="signInInput" placeholder="Date of Birth" id="dob" style="color: #8D8D8D"/>
+            </div>
+           <p class="notMemberPara">Get a Nike Member Reward every year on your Birthday.</p>
+           <select class="signInInput" id="country" style="color: #8D8D8D">
+               <option value="India">India</option>
+               <option value="Germany">Germany</option>
+               <option value="Iceland">Iceland</option>
+               <option value="Hungary">Hungary</option>
+               <option value="Greece">Greece</option>
+               <option value="Myanmar">Myanmar</option>
+               <option value="Canada">Canada</option>
+               <option value="Russia">Russia</option>
+               <option value="Egypt">Egypt</option>
+               <option value="Sudan">Sudan</option>
+           </select>
+           <div class=" autobuttons">
+            <div class="signInFlex">
+                <img src="https://static.thenounproject.com/png/190431-200.png" class="tickNoShow positionOfTick" id="tick1"/>
+                <input type="button" value="Male" id="male" onclick="addAttribute()" class="male"/>
+            </div>
+            <div class="signInFlex">
+                <img src="https://static.thenounproject.com/png/190431-200.png" class="tickNoShow positionOfTick" id="tick2"/>
+                <input type="button" value="Female" id="female" onclick="addAttribute()" class="female"/>
+            </div>
+           </div>
+           
+            <div class="checkboxSignup signInFlex">
+                <input type="checkbox" class="signUpCheckbox" checked>
+                <label class="labelCheckbox1">
+                    
+                    Sign up for emails to get updates from Nike on products, offers and your Member benefits
+                </label>
+            </div>
+            <p class="termsOfUsePara">By creating an account, you agree to Nike's&nbsp;<span class="policyTerms">Privacy Policy</span>&nbsp;and&nbsp;<span class="policyTerms">Terms of Use.</span></p>
+            <button class="signInButton" type="button" id="signIUpButton">JOIN US</button>
+            <p class="notMemberPara">Already a Member?&nbsp;<span class="notMemberParaSpan" id="signIn">Sign In.</span></p>
+        </form>
+    </div>
+    <script type="text/javascript">
+                function modalClick() {
+                    modal.style.display = "block";
+                }
+                var modal = document.getElementById("signInContainer");
+                modal.style.display = "none";
+                var close = document.getElementById("crossLogo");
+                close.onclick = function() {
+                    modal.style.display = "none";
+                }
+                var modal2 = document.getElementById("signUpContainer");
+                modal2.style.display = "none";
+                var close1 = document.getElementById("crossLogo1");
+                close1.onclick = function() {
+                    modal2.style.display = "none";
+                    modal.style.display = "block";
+                }
+                
+                var signUpBtn = document.getElementById('joinUs');
+                signUpBtn.addEventListener('click',modal2Click);
+                var signIn = document.getElementById('signIn');
+                signIn.addEventListener('click',goToSignIn);
+                function goToSignIn(){
+                        modal2.style.display = "none";
+                        modal.style.display = "block";
+                    
+                }
+                
+                function modal2Click() {
+                    modal2.style.display = "block";
+                    modal.style.display = "none";
+                }
+
+                function addAttribute(){
+                   if(event.target.className === 'male'){
+                        var temp = event.target;
+                        temp.setAttribute('class','selected tickShow');
+                        document.getElementById('male').style.color = "black";
+                        document.getElementById('tick1').style.display="block";
+                        document.getElementById('tick2').style.display="none";
+                        document.getElementById('female').style.color = "#797979";
+                        document.getElementById('female').setAttribute('class','female');
+                        console.log(event.target.className)
+                   }
+                   if(event.target.className === 'female'){
+                        var temp = event.target;
+                        temp.setAttribute('class','selected tickShow');
+                        document.getElementById('female').style.color = "black";
+                        document.getElementById('tick2').style.display="block";
+                        document.getElementById('tick1').style.display="none";
+                        document.getElementById('male').style.color = "#797979";
+                        document.getElementById('male').setAttribute('class','male');
+                        console.log(event.target.className)
+                   }
+                }
+
+                //sign up process
+                var signUpInfo = document.getElementById("signIUpButton");
+                signUpInfo.addEventListener("click", signUp);
+                var userData = JSON.parse(localStorage.getItem("userDatabase")) || [];
+                function signUp() {
+                    console.log("I'm here");
+                    var email = document.getElementById("signUpEmail").value;
+                    var password = document.getElementById("signUpPassword").value;
+                    var firstName = document.getElementById("firstName").value;
+                    var lastName = document.getElementById("lastName").value;
+                    var dob = document.getElementById('dob').value;
+                    if(email === '' || email === undefined){
+                        console.log('email is empty')
+                        var error03 = document.createElement('p');
+                        error03.innerHTML = "Please enter a valid email";
+                        error03.style.fontSize = "12px";
+                        error03.style.color = "red";
+                        error03.style.marginLeft = "35px";
+                        var div03 = document.getElementById('signUpEmailDiv');
+                        console.log(div03)
+                        div03.appendChild(error03);
+                    }
+                    else if(password === '' || password === undefined){
+                        console.log('password is empty')
+                        var error04 = document.createElement('p');
+                        error04.innerHTML = "Please enter a valid password";
+                        error04.style.fontSize = "12px";
+                        error04.style.color = "red";
+                        error04.style.marginLeft = "35px";
+                        var div04 = document.getElementById('signUpPasswordDiv');
+                        console.log(div04)
+                        div04.append(error04);
+                    }
+                    else if(firstName === '' || firstName === undefined){
+                        console.log('firstName is empty')
+                        var error05 = document.createElement('p');
+                        error05.innerHTML = "Please enter a valid First Name";
+                        error05.style.fontSize = "12px";
+                        error05.style.color = "red";
+                        error05.style.marginLeft = "35px";
+                        var div05 = document.getElementById('firstNameDiv');
+                        console.log(div05)
+                        div05.append(error05);
+                    }
+                    else if(lastName === '' || lastName === undefined){
+                        console.log('lastName is empty')
+                        var error01 = document.createElement('p');
+                        error01.innerHTML = "Please enter a valid Last Name";
+                        error01.style.fontSize = "12px";
+                        error01.style.color = "red";
+                        error01.style.marginLeft = "35px";
+                        var div01 = document.getElementById('lastNameDiv');
+                        console.log(div01)
+                        div01.append(error01);
+                    }
+                    else if(dob === '' || dob === undefined){
+                        console.log('dob is empty')
+                        var error02 = document.createElement('p');
+                        error02.innerHTML = "Please enter a valid Date Of Birth";
+                        error02.style.fontSize = "12px";
+                        error02.style.color = "red";
+                        error02.style.marginLeft = "35px";
+                        var div02 = document.getElementById('dobDiv');
+                        console.log(div02)
+                        div02.append(error02);
+                    }
+                    else if((email !== '' || email !== undefined) && (password !== '' || password !== undefined) && (firstName !== '' || firstName !== undefined) && (lastName !== '' || lastName !== undefined) && (dob !== '' || dob !== undefined)){
+                        var gender;
+                        var tickedMale = document.getElementById('male').classList;
+                        console.log(tickedMale);
+                        if(tickedMale.contains('tickShow')){
+                            gender = "Male";
+                        }
+                        var tickedFemale = document.getElementById('female').classList;
+                        console.log(tickedFemale);
+                        if(tickedFemale.contains('tickShow')){
+                            gender = "Female";
+                        }
+
+                        var selection = document.getElementById('country').value;
+                        
+                        var userCred = {
+                            emailAdd: email,
+                            pass: password,
+                            firstName: firstName,
+                            lastName: lastName,
+                            dob: dob,
+                            selection: selection,
+                            gender: gender,
+                        };
+                        userData.push(userCred);
+                        localStorage.setItem("userDatabase", JSON.stringify(userData));
+                        goToSignIn();
+                    }
+                    
+                    
+                }
+
+                //sign in process
+                var signInValidation = document.getElementById("signInButton");
+                console.log(signInValidation)
+              //  signInValidation.addEventListener("click",signIn);
+
+                function validation(){
+                    console.log("Sign in Validation");
+                    var dataOfUser = JSON.parse(localStorage.getItem("userDatabase"));
+                    var signInEmailEntry = document.getElementById('signInEmail').value;
+                    var signInPasswordEntry = document.getElementById('signInPassword').value;
+                    var isPresent  = false;
+                    dataOfUser.forEach(function(el){
+                        if((el.emailAdd === signInEmailEntry) && (el.pass === signInPasswordEntry)){
+                            isPresent = true;
+                            alert('Signed in successfully');
+                            modal.style.display = "none";
+                            return;
+                        }
+                    });
+                    if(isPresent === false){
+                        var error1 = document.createElement('p');
+                        error1.innerHTML = "Please enter a valid email address";
+                        error1.style.fontSize = "12px";
+                        error1.style.color = "red";
+                        var error2 = document.createElement('p');
+                        error2.innerHTML = "Please enter a valid password";
+                        error2.style.fontSize = "12px";
+                        error2.style.color = "red";
+                        error2.style.marginLeft = "35px";
+                        error1.style.marginLeft = "35px";
+                        var div1 = document.getElementById('signInEmailDiv');
+                        var div2 = document.getElementById('signInPasswordDiv');
+                        console.log(div1,div2)
+                        div1.append(error1);
+                        div2.append(error2);
+                    }
+                }
+    </script>
+</body>
+</html>
