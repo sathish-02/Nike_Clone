@@ -50,9 +50,9 @@ onclick()
 - localStorage.setItem()
 
 # Creators
-- @Sathish B
-- @Ayush Dhondiyal
-- @Avinash Kumar
+- @Sathish
+- @ayush536
+- @avinashkumarkml
 - @Mohammedasif Pinitod
 - @Roshan Indane
 - @Salakha S
