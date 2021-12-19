@@ -49,4 +49,12 @@ onclick()
 - localStorage.getItem()
 - localStorage.setItem()
 
+# Creators
+- @Sathish B
+- @Ayush Dhondiyal
+- @Avinash Kumar
+- @Mohammedasif Pinitod
+- @Roshan Indane
+- @Salakha S
+
 
